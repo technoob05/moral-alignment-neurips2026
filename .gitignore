@@ -7,3 +7,10 @@ dist/
 build/
 .env
 *.log
+
+# Large data files (exceed GitHub 100MB limit)
+data/BLEnD_multiple-choice-questions_test.csv
+
+# Embedded git repos (push separately)
+moral_machine/
+MultiTP

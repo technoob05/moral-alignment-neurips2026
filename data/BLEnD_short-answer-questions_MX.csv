@@ -1,0 +1,501 @@
+ID,Topic,Source,Question,Translation
+Al-en-01,Food,English (US),¿Cuál es una merienda común para niños de preescolar en México?,What is a common snack for preschool kids in Mexico?
+Al-en-02,Food,English (US),¿Cuál es una comida popular para acompañar con cerveza en México?,What is a popular food to go with beer in Mexico?
+Al-en-04,Food,English (US),¿Cuál es la fruta más popular en México?,What is the most popular fruit in Mexico?
+Al-en-06,Food,English (US),¿Cuál es una comida común en las cafeterías escolares de México?,What is a common school cafeteria food in Mexico?
+Al-en-08,Food,English (US),¿Cuáles son los bocadillos más comúnmente consumidos en los centros comerciales de México?,What are the most commonly eaten snacks at shopping malls in Mexico?
+Al-en-09,Food,English (US),¿Cuál es una botana popular en un parque de diversiones en México?,What is a popular snack at an amusement park in Mexico?
+Al-en-16,Education,English (US),"¿A qué edad comienzan los niños el preescolar en México? (Proporcione solo números arábigos (por ejemplo, 3).)","At what age do kids start preschool in Mexico? (Provide Arabic numerals (e.g., 12) only.)"
+Al-en-17,Education,English (US),¿Cuál es un deporte extracurricular popular para la primaria en México?,What is a popular afterschool sport for elementary schools in Mexico?
+Al-en-18,Education,English (US),¿Para qué materia reciben educación privada los estudiantes de primaria en México?,For which subject do elementary students get private education in Mexico?
+Al-en-19,Education,English (US),¿Cuál es un segundo idioma popular para los estudiantes de preparatoria en México?,What is a popular second language for high school students in Mexico?
+Al-en-21,Education,English (US),¿Cuál materia es la más importante para la educación de niños superdotados en México?,Which subject is the most important for gifted education in Mexico?
+Al-en-32,Holidays/Celebration/Leisure,English (US),¿Cuál es el platillo principal para el Día de Acción de Gracias en México?,What is the main dish for Thanksgiving in Mexico?
+Al-en-33,Holidays/Celebration/Leisure,English (US),¿Qué hacen las personas para celebrar Halloween en México?,What do people do to celebrate Halloween in Mexico?
+Al-en-34,Holidays/Celebration/Leisure,English (US),¿Qué hacen las personas para celebrar el Año Nuevo en México?,What do people do to celebrate New Year's Day in Mexico?
+Al-en-35,Holidays/Celebration/Leisure,English (US),¿Qué hacen las personas para celebrar la Navidad en México?,What do people do to celebrate Christmas in Mexico?
+Al-en-36,Holidays/Celebration/Leisure,English (US),¿Qué comida se asocia con Halloween en México?,What food is associated with Halloween in Mexico?
+Al-en-37,Holidays/Celebration/Leisure,English (US),¿Qué comida se asocia con la Navidad en México?,What food is associated with Christmas in Mexico?
+Al-en-38,Holidays/Celebration/Leisure,English (US),¿Qué comida se asocia con el día de San Valentín en México?,What food is associated with Valentine's day in Mexico?
+Al-en-39,Holidays/Celebration/Leisure,English (US),¿Qué comen las personas en su cumpleaños en México?,What do people eat on their birthday in Mexico?
+Al-en-40,Holidays/Celebration/Leisure,English (US),¿Cuál es un lugar al aire libre popular para que las familias se diviertan con niños pequeños en México?,What is a popular outdoor place for families to have fun with little kids in Mexico?
+Al-en-43,Holidays/Celebration/Leisure,English (US),¿Cuál es una actividad popular de interior para las familias en México?,What is a popular indoor activity for families in Mexico?
+An-ar-02,Education,Arabic (Algeria),¿Dónde comen los estudiantes universitarios en México?,Where do university students have lunch in Mexico?
+An-ar-03,Education,Arabic (Algeria),¿En qué mes se programa normalmente el periodo de exámenes finales en las preparatorias de México? (Proporciona solo números arábigos (1~12).),Which month is the final exam term usually scheduled at high schools in Mexico? (Provide Arabic numerals (1~12) only.)
+An-ar-08,Education,Arabic (Algeria),"¿Cuántas horas al día suelen pasar los estudiantes en la preparatoria en México? (Proporcione números arábigos en enteros (0~24), sin ningún punto decimal.)","How many hours a day do students in Mexico usually spend at high school? (Provide Arabic numerals in integers (0~24), without any decimal points.)"
+An-ar-09,Education,Arabic (Algeria),"¿Cuántos idiomas estudian los estudiantes de preparatoria en México? (Proporciona solo números arábigos, por ejemplo, 5.)","How many languages do students study at high school in Mexico? (Provide Arabic numerals (e.g., 5) only.)"
+An-ar-34,Sport,Arabic (Algeria),¿Cuál es el deporte de equipo más popular que se juega en las escuelas en México?,What is the most popular sport played in a team at school in Mexico?
+An-ar-35,Sport,Arabic (Algeria),¿Quién es el comentarista deportivo más popular en México?,Who is the most popular sport commentator in Mexico?
+An-ar-36,Sport,Arabic (Algeria),¿Cuál es el equipo deportivo más popular en México?,What is the most popular sport team in Mexico?
+An-ar-43,Sport,Arabic (Algeria),¿Cuáles son los lugares comunes o establecimientos donde las personas en México suelen reunirse para ver transmisiones deportivas?,What are the common places or venues where individuals in Mexico usually gather to watch sports broadcasts?
+Ca-sp-05,Food,Spanish (Spain),"¿Cuántas comidas al día suelen tener las personas de México? (Proporciona solo números arábigos (por ejemplo, 5).)","How many meals per day do people from Mexico usually have? (Provide Arabic numerals (e.g., 5) only.)"
+Ca-sp-06,Food,Spanish (Spain),¿Cuál es la comida más importante del día para la gente de México?,Which is the most important meal of the day to people from Mexico?
+Ca-sp-08,Food,Spanish (Spain),¿Cuál es el ingrediente más común utilizado en la dieta mexicana?,What is the most common ingredient used in Mexico's diet?
+Ca-sp-09,Food,Spanish (Spain),¿Qué suelen comer las personas de México de postre?,What do people from Mexico usually eat for dessert?
+Ca-sp-11,Food,Spanish (Spain),¿Qué día de la semana la gente suele organizar una comida familiar en México?,Which day of the week do people usually organize a family meal in Mexico?
+Ca-sp-14,Food,Spanish (Spain),¿Cuál es la bebida caliente más popular en México?,Which is the most popular hot drink in Mexico?
+Ca-sp-19,Holidays/Celebration/Leisure,Spanish (Spain),¿Qué suelen beber los jóvenes de México en el club nocturno?,What do young people from Mexico usually drink at the night club?
+Ca-sp-21,Holidays/Celebration/Leisure,Spanish (Spain),¿En qué mes la gente suele tomar vacaciones en México? (Proporcione solo números arábigos (1~12).),At which month do people usually take holidays in Mexico? (Provide Arabic numerals (1~12) only.)
+Ca-sp-29,Holidays/Celebration/Leisure,Spanish (Spain),¿Qué tradición existe en México para la Nochevieja?,What tradition is there in Mexico for New Year's Eve?
+Ca-sp-38,Family,Spanish (Spain),¿Cuál es el tipo de casa típico para una familia en México?,Which is the typical type of house for a family in Mexico?
+Ca-sp-41,Family,Spanish (Spain),¿Dónde suelen vivir los ancianos dependientes en México?,Where do the dependent elderly usually live in Mexico?
+Ca-sp-42,Family,Spanish (Spain),"¿Cuántas semanas dura la licencia de maternidad para las madres en México? (Proporciona solo números arábigos, por ejemplo, 20.)","How long (in weeks) is Mexico's maternity leave for mums? (Provide Arabic numerals (e.g., 20) only.)"
+Ca-sp-43,Family,Spanish (Spain),"¿Cuánto dura (en semanas) la licencia de paternidad en México para los padres? (Proporciona solo números arábigos (por ejemplo, 20).)","How long (in weeks) is Mexico's paternity leave for dads? (Provide Arabic numerals (e.g., 20) only.)"
+Ca-sp-45,Family,Spanish (Spain),¿Qué tipo de destino se elige comúnmente para unas vacaciones familiares en México?,What type of destination is commonly chosen for a family vacation in Mexico?
+Gu-ch-05,Sport,Chinese (China),¿Qué deportes prefieren los adultos mayores en México?,What sports do seniors like the most in Mexico?
+Gu-ch-06,Sport,Chinese (China),¿Qué deportes les gusta jugar más a los hombres en México?,What sports do men like to play the most in Mexico?
+Gu-ch-07,Sport,Chinese (China),¿Quién es el jugador de baloncesto más famoso en México?,Who is the most famous basketball player in Mexico?
+Gu-ch-08,Sport,Chinese (China),¿Cuál es el deporte más popular entre los niños en México?,What is the most popular sports among children in Mexico?
+Gu-ch-09,Sport,Chinese (China),¿Qué deportes les gusta jugar más a las mujeres en México?,What sports do women like to play the most in Mexico?
+Gu-ch-11,Sport,Chinese (China),¿En qué evento deportivo ha ganado México la mayor cantidad de medallas de oro en los Juegos Olímpicos?,What sports event has Mexico won the most gold medals at the Olympics?
+Gu-ch-15,Sport,Chinese (China),¿Qué deportes prefieren jugar los estudiantes universitarios en México?,What sports do male students in university like to play the most in Mexico?
+Gu-ch-16,Family,Chinese (China),"¿Cuántas personas hay en una familia en promedio en México? (Proporciona solo números arábigos, por ejemplo, 12.)","How many people are there in a family on average in Mexico? (Provide Arabic numerals (e.g., 12) only.)"
+Gu-ch-18,Family,Chinese (China),"¿Cuántos hijos suelen tener las parejas en México? (Proporcione solo números arábigos (por ejemplo, 12).)","How many children do couples usually have in Mexico? (Provide Arabic numerals (e.g., 12) only.)"
+Gu-ch-31,Education,Chinese (China),"¿Cuál es la duración en años de la escuela primaria en México? (Proporcione solo números arábigos (por ejemplo, 12).)","What is the duration of elementary school in years in Mexico? (Provide Arabic numerals (e.g., 12) only.)"
+Gu-ch-32,Education,Chinese (China),"¿Cuál es la duración en años de la educación obligatoria en México? (Proporcione solo números arábigos (por ejemplo, 12).)","What is the duration of compulsory education in years in Mexico? (Provide Arabic numerals (e.g., 12) only.)"
+Gu-ch-33,Education,Chinese (China),"¿A partir de qué edad los estudiantes comienzan a aprender su segundo idioma en México? (Proporciona solo números arábigos, por ejemplo, 12.)","From which age do students start learning their second language in Mexico? (Provide Arabic numerals (e.g., 12) only.)"
+Gu-ch-38,Education,Chinese (China),"¿Cuál es la duración de la educación universitaria en México? (Proporciona solo números arábigos (por ejemplo, 12).)","What is the duration of undergraduate education in Mexico? (Provide Arabic numerals (e.g., 12) only.)"
+Gu-ch-40,Education,Chinese (China),"¿A qué hora salen de la escuela los alumnos más pequeños de primaria en México? (Proporcionar en formato HH:MM (por ejemplo, 18:00, 09:00).)","What time do younger elementary school students finish school in Mexico? (Provide in HH:MM format (e.g., 18:00, 09:00).)"
+Gu-ch-41,Education,Chinese (China),"¿Cuántos instrumentos musicales suelen tocar los estudiantes de primaria en México? (Proporciona solo números arábigos, por ejemplo, 12.)","How many musical instruments do elementary school students in Mexico typically play? (Provide Arabic numerals (e.g., 12) only.)"
+Ji-ko-02,Work life,Korean (South Korea),¿Qué día de la semana prefieren las personas en México para tener cenas de empresa?,What day of the week do people in Mexico prefer to have company dinners?
+Ji-ko-03,Work life,Korean (South Korea),¿Qué región/ciudad tiene el mayor número de empresas financieras en México?,Which region/city has the highest number of financial companies in Mexico?
+Ji-ko-07,Work life,Korean (South Korea),¿Cuál es la empresa privada más famosa de México?,What is the most famous private company in Mexico?
+Ji-ko-08,Work life,Korean (South Korea),"¿Cuál es el número máximo de horas que se pueden trabajar por semana en México? (Proporciona solo números arábigos (por ejemplo, 12).)","What is the maximum number of hours one can work per week in Mexico? (Provide Arabic numerals (e.g., 12) only.)"
+Ji-ko-09,Work life,Korean (South Korea),¿Qué suelen comer las personas durante una reunión de empresa en México?,What do people typically eat during company get-together in Mexico?
+Ji-ko-14,Work life,Korean (South Korea),¿Cuál es el artículo de exportación representativo de México?,What is the representative export item of Mexico?
+Ji-ko-15,Work life,Korean (South Korea),"¿Cuánto dura (en horas) el descanso para comer típico en México? (Proporcione solo números arábigos hasta un punto decimal (por ejemplo, 2, 3.5).)","How long (in hours) is the typical lunch break in Mexico? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)"
+Ji-ko-16,Family,Korean (South Korea),¿Dónde se quedan las madres por un cierto período después del parto para recuperarse en México?,Where do mothers stay for a certain period after childbirth for recovery in Mexico?
+Ji-ko-19,Family,Korean (South Korea),¿Cuál es la flor que más se regala en México en el Día de los Padres?,What is Mexico's most commonly given flower on Parents' Day?
+Ji-ko-22,Family,Korean (South Korea),¿En qué gastan especialmente las personas su primer salario en la sociedad mexicana?,What do people especially spend their first salary on in Mexico's society?
+Ji-ko-24,Family,Korean (South Korea),¿Cuál es la instalación recreativa preferida por los niños en México?,What is the most preferred recreational facility among children in Mexico?
+Ji-ko-25,Family,Korean (South Korea),¿Cuáles son las festividades relacionadas con la familia en México?,What are the family-related holidays in Mexico?
+Ji-ko-26,Family,Korean (South Korea),¿Cuáles son los hitos clave asociados con la independencia de los hijos de sus padres en la sociedad mexicana?,What are the key milestones associated with children's independence from their parents in Mexico's society?
+Ji-ko-27,Family,Korean (South Korea),¿Cuál es el regalo común que das cuando visitas a los padres ancianos en México?,What is the common gift you give when visiting elderly parents in Mexico?
+Ji-ko-28,Family,Korean (South Korea),¿Cuál es el primer día que la gente celebra después de que nace un niño en México?,When is the first day that people celebrate after a child is born in Mexico?
+Ji-ko-29,Family,Korean (South Korea),¿Qué cumpleaños se celebra con mayor pompa en la sociedad mexicana?,Which age's birthday is celebrated the most grandly in Mexico's society?
+Ji-ko-31,Education,Korean (South Korea),¿Dónde suelen estudiar para los exámenes los estudiantes de secundaria y preparatoria en México?,Where do middle and high school students in Mexico usually study for exams?
+Ji-ko-33,Education,Korean (South Korea),¿A dónde suelen ir los estudiantes de preparatoria en México después de cenar?,Where do high school students in Mexico usually go after dinner?
+Ji-ko-34,Education,Korean (South Korea),¿Cómo van a la escuela los estudiantes de primaria en México?,How do elementary school students in Mexico go to school?
+Ji-ko-35,Education,Korean (South Korea),¿Cuál es la forma más común de educación privada en México?,What is the most common form of private education in Mexico?
+Ji-ko-36,Education,Korean (South Korea),¿A qué academia de estudio/instituto educativo privado asisten con más frecuencia los estudiantes de secundaria o preparatoria en México?,Which subject’s academy/private educational institute do middle or high students most frequently attend in Mexico?
+Ji-ko-37,Education,Korean (South Korea),¿Qué tipo de ropa usan los estudiantes de secundaria y preparatoria para ir a la escuela en México?,What type of clothing do middle and high school students wear to school in Mexico?
+Ji-ko-38,Education,Korean (South Korea),¿Qué carrera se considera la más difícil para ingresar en México?,Which major is considered the most difficult to gain admission to in Mexico?
+Ji-ko-39,Education,Korean (South Korea),¿Cuál es el instrumento musical más comúnmente aprendido por los estudiantes de primaria en México?,What is the most commonly learned musical instrument by elementary school students in Mexico?
+Ji-ko-40,Education,Korean (South Korea),¿Qué suelen hacer los estudiantes de preparatoria durante el recreo en las escuelas de México?,What do high school students typically do during break time in schools in Mexico?
+Ji-ko-41,Education,Korean (South Korea),¿Qué tipo de zapatos usan los estudiantes en las escuelas en México?,What kind of shoes do students wear in schools in Mexico?
+Ji-ko-42,Education,Korean (South Korea),¿Cuáles son las materias requeridas en el examen de ingreso a la universidad en México?,What are the required subjects in Mexico's university entrance exam?
+Ji-ko-44,Education,Korean (South Korea),¿Qué región (dentro de una ciudad) en México tiene el mayor fervor académico?,Which region (within a city) in Mexico has the highest academic fervor?
+Ji-ko-45,Education,Korean (South Korea),¿Qué es lo que más esperan las personas de los festivales universitarios en México?,What do people look forward to the most at university festivals in Mexico?
+Jo-sp-01,Sport,Spanish (Spain),¿Cuál es el segundo deporte más popular en México?,What is the second most popular sport in Mexico?
+Jo-sp-02,Sport,Spanish (Spain),¿Cuál es el deporte más popular jugado sin una pelota en México?,What is the most popular sport played without a ball in Mexico?
+Jo-sp-09,Sport,Spanish (Spain),¿Qué deportes están más asociados con la clase alta en México?,What sports are most associated with the upper class in Mexico?
+Jo-sp-13,Sport,Spanish (Spain),¿Cuál es el deporte acuático más popular en México?,What is the most popular water sport in Mexico?
+Jo-sp-14,Sport,Spanish (Spain),¿Cuál es el deporte mental más popular en México?,What is the most popular mental sport in Mexico?
+Jo-sp-18,Work life,Spanish (Spain),"¿Cuántos días de vacaciones por año recibe un trabajador estándar en México? (Proporcione solo números arábigos (por ejemplo, 12).)","How many holiday days per year does a standard worker gets in Mexico? (Provide Arabic numerals (e.g., 12) only.)"
+Jo-sp-19,Work life,Spanish (Spain),¿Qué región de México ha estado tradicionalmente asociada con la agricultura?,What region in Mexico has been traditionally associated with agriculture?
+Jo-sp-21,Work life,Spanish (Spain),"¿A qué hora, si es que la hay, la gente suele salir del trabajo para ir a comer en México? (Proporcionar en formato HH:MM (por ejemplo, 18:00, 09:00).)","What time, if any, do people usually leave work for lunch in Mexico? (Provide in HH:MM format (e.g., 18:00, 09:00).)"
+Jo-sp-31,Education,Spanish (Spain),"¿A qué hora suelen salir los estudiantes de preparatoria de la escuela en México? (Proporcionar en formato HH:MM, por ejemplo, 18:00, 09:00).","What time do high school students tend to leave school in Mexico? (Provide in HH:MM format (e.g., 18:00, 09:00).)"
+Jo-sp-32,Education,Spanish (Spain),¿Qué deporte suelen practicar los alumnos de primaria en las escuelas de México?,What sport do elementary school students tend to practice at school in Mexico?
+Jo-sp-36,Education,Spanish (Spain),"¿Cuántas semanas duran las vacaciones de verano en las escuelas primarias de México? (Proporcionar solo en números arábigos (por ejemplo, 7, 8).)","How long (in weeks) are summer vacations at elementary schools in Mexico? (Provide in Arabic numerals (e.g., 7, 8) only.)"
+Jo-sp-37,Education,Spanish (Spain),"¿Cuántas semanas duran las vacaciones de verano en las universidades de México? (Proporcionar solo en números arábigos (por ejemplo, 7, 8).)","How long (in weeks) are summer vacations at universities in Mexico? (Provide in Arabic numerals (e.g., 7, 8) only.)"
+Jo-sp-39,Education,Spanish (Spain),"¿A qué edad comienza la educación primaria en México? (Proporcionar solo en números arábigos (por ejemplo, 7, 8).)","At what age does elementary education begin in Mexico? (Provide in Arabic numerals (e.g., 7, 8) only.)"
+Jo-sp-43,Education,Spanish (Spain),"¿Cuántos idiomas se estudian en la educación primaria además del idioma oficial de México? (Proporcionar solo en números arábigos, por ejemplo, 7, 8.)","How many languages are studied in elementary education besides Mexico's official language? (Provide in Arabic numerals (e.g., 7, 8) only.)"
+Jod-ch-01,Food,Chinese (China),¿Qué utensilios de comida se usan comúnmente en México?,What eating utensils do people commonly used in Mexico?
+Jod-ch-04,Food,Chinese (China),¿Qué bebida sin alcohol les gusta tomar a las personas en México?,What soft drink do people in Mexico like to have?
+Jod-ch-06,Food,Chinese (China),¿Cuál es el alcohol tradicional más popular en México?,What is the most popular traditional alcohol in Mexico?
+Jod-ch-07,Food,Chinese (China),"¿Cuánto tiempo (en horas) en promedio tardan las personas en México en cenar en un restaurante? (Proporcione solo números arábigos hasta un punto decimal (por ejemplo, 2, 3.5).)","How long (in hours) on average does it take for people in Mexico to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)"
+Jod-ch-09,Food,Chinese (China),"¿A qué hora suelen cenar las personas en México? (Proporcionar en formato HH:MM (por ejemplo, 18:00, 09:00).)","What time do people usually have dinner in Mexico? (Provide in HH:MM format (e.g., 18:00, 09:00).)"
+Jod-ch-12,Food,Chinese (China),¿Qué tipo de sopa les gusta tomar a las personas de México?,What kind of soup do people from Mexico like to have?
+Jod-ch-13,Food,Chinese (China),¿Qué comida callejera les gusta comer a las personas de México?,What street food do people from Mexico like to eat?
+Jod-ch-15,Food,Chinese (China),¿Qué tipo de mariscos les gusta comer a las personas de México?,What kind of seafood do people from Mexico like to eat?
+Jod-ch-16,Holidays/Celebration/Leisure,Chinese (China),¿Cuál es el festival más grande de México?,What is the biggest festival in Mexico?
+Jod-ch-28,Holidays/Celebration/Leisure,Chinese (China),¿Cuál es el transporte público más utilizado por las personas al viajar entre ciudades en México?,What is the most commonly used public transport by people when travelling between cites in Mexico?
+Jod-ch-30,Holidays/Celebration/Leisure,Chinese (China),¿Cuáles son las decoraciones o símbolos específicos asociados con el festival más grande de México?,What are the specific decorations or symbols associated with the most biggest festival in Mexico?
+Jod-ch-37,Sport,Chinese (China),¿Qué deportes les gusta ver más a las mujeres en México?,What sports do women like to watch the most in Mexico?
+Jod-ch-38,Sport,Chinese (China),¿Qué deportes les gusta ver más a los hombres en México?,What sports do men like to watch the most in Mexico?
+Jod-ch-41,Holidays/Celebration/Leisure,Chinese (China),¿Cuál es la actividad de ocio común en la que participan las mujeres de 20 años en México?,What is the common leisure activity that females in their 20s in Mexico engage in?
+Jod-ch-42,Holidays/Celebration/Leisure,Chinese (China),¿Cuál es la actividad de ocio común en la que participan los hombres en sus 20s en México?,What is the common leisure activity that males in their 20s in Mexico engage in?
+Jod-ch-46,Work life,Chinese (China),"¿Cuánto tiempo (en horas) suele tomar la gente una pausa después de comer durante un día entre semana en México? (Proporcione solo números arábigos hasta un punto decimal (por ejemplo, 2, 3.5).)","How long (in hours) do people usually take a break after lunch on a weekday in Mexico? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)"
+Jod-ch-48,Work life,Chinese (China),¿Qué comen las personas para el almuerzo durante los días laborales en México?,What do people eat for lunch during the working days in Mexico?
+Jod-ch-50,Work life,Chinese (China),"¿Cuál es el tiempo promedio de traslado (en minutos) para las personas en México? (Proporcione solo números arábigos, por ejemplo, 1.)","What is the average commute time (in minutes) for people in Mexico? (Provide Arabic numerals (e.g., 1) only.)"
+Jod-ch-51,Work life,Chinese (China),¿Cuál es el medio de transporte más común que la gente utiliza para ir al trabajo en México?,What is the most common transportation that people take to get to work in Mexico?
+Jod-ch-54,Work life,Chinese (China),"¿Cuántos días dura la licencia por matrimonio en México? (Proporciona solo números arábigos, por ejemplo, 12.)","How long (in days) is the marriage leave in Mexico? (Provide Arabic numerals (e.g., 12) only.)"
+Jod-ch-56,Work life,Chinese (China),"¿Cuál es la edad típica de jubilación para las mujeres en México? (Proporcione solo números arábigos (por ejemplo, 12).)","What is the typical retirement age for women in Mexico? (Provide Arabic numerals (e.g., 12) only.)"
+Jod-ch-57,Work life,Chinese (China),"¿Cuál es la edad típica de jubilación para los hombres en México? (Proporcione solo números arábigos (por ejemplo, 12).)","What is the typical retirement age for men in Mexico? (Provide Arabic numerals (e.g., 12) only.)"
+Jod-ch-58,Work life,Chinese (China),¿Cuál es la profesión más respetada en México?,Which profession is the most respected in Mexico?
+Jod-ch-60,Work life,Chinese (China),¿Cuál es la duración (en horas) de un día laboral típico en México? (Proporcione únicamente números arábigos (0~24).),What is the duration (in hours) of a typical workday in Mexico? (Provide Arabic numerals (0~24) only.)
+Jod-ch-61,Work life,Chinese (China),¿Cuál es la ocupación más preferida entre las mujeres en México?,Which occupation is most preferred among females in Mexico?
+Jod-ch-62,Work life,Chinese (China),¿Cuál es la ocupación más preferida entre los hombres en México?,Which occupation is most preferred among males in Mexico?
+Ki-pe-17,Education,Persian (Iran),"En promedio, ¿hasta qué nivel suelen estudiar los estudiantes en México? (por ejemplo, primaria, secundaria)","On average, how far do students typically pursue their education in Mexico? (e.g., elementary, high school)"
+Ki-pe-24,Education,Persian (Iran),¿Qué idioma se enseña en las escuelas de México además del inglés?,What language is taught in schools in Mexico besides English?
+Ki-pe-30,Education,Persian (Iran),¿Qué días de la semana están cerradas las escuelas en México?,What days of the week are schools closed in Mexico?
+Ki-pe-32,Food,Persian (Iran),¿Qué comida suelen preparar los anfitriones para los invitados en México?,What food do the hosts usually prepare for the guests in Mexico?
+Ki-pe-34,Food,Persian (Iran),¿Cuál es la bebida habitual en el desayuno en México?,What is the usual drink in the breakfast in Mexico?
+Ki-pe-36,Food,Persian (Iran),"Exceptuando la comida originaria de México, ¿qué comida de qué país es más popular en México?","Except the food original from Mexico, which country's food is more popular in Mexico?"
+Ki-pe-39,Food,Persian (Iran),¿Qué comida se suele preparar para un picnic familiar en México?,What food is usually prepared for a family picnic in Mexico?
+Ki-pe-40,Food,Persian (Iran),¿Qué comida de México es considerada asquerosa por el resto del mundo?,Which food from Mexico is considered disgusting by the rest of the world?
+Ki-pe-43,Food,Persian (Iran),¿Cuál es el nombre del pan popular en México?,What is the name of the popular bread in Mexico?
+Ki-pe-51,Work life,Persian (Iran),"¿A qué hora cierran las oficinas de gobierno en México? (Proporcionar en formato HH:MM (por ejemplo, 18:00, 09:00).)","What time of day are government offices closed in Mexico? (Provide in HH:MM format (e.g., 18:00, 09:00).)"
+Ki-pe-53,Work life,Persian (Iran),"¿Cuál es el horario de inicio habitual de las oficinas gubernamentales en México? (Proporcionar en formato HH:MM, por ejemplo, 18:00, 09:00).","What is the normal start time of government offices in Mexico? (Provide in HH:MM format (e.g., 18:00, 09:00).)"
+Kik-in-01,Holidays/Celebration/Leisure,Indonesian (Indonesia),¿Qué día festivo nacional tiene la mayor duración en México?,What national holiday has the longest duration in Mexico?
+Kik-in-02,Holidays/Celebration/Leisure,Indonesian (Indonesia),¿Cuáles son las actividades comunes que la gente de México realiza para celebrar el Día de la Independencia?,What are the common activities people from Mexico do to celebrate Independence day?
+Kik-in-04,Holidays/Celebration/Leisure,Indonesian (Indonesia),¿Qué se instala enfrente de la casa cuando muere un miembro de la familia en México?,What is installed in front of the house when a family member dies in Mexico?
+Kik-in-05,Holidays/Celebration/Leisure,Indonesian (Indonesia),¿Cuándo se suele realizar una celebración o ceremonia de embarazo en México?,When is a pregnancy celebration or ceremony usually held in Mexico?
+Kik-in-06,Holidays/Celebration/Leisure,Indonesian (Indonesia),¿Qué evento se suele realizar antes de una boda en México?,What event is usually held before a wedding in Mexico?
+Kik-in-07,Holidays/Celebration/Leisure,Indonesian (Indonesia),¿Qué se suele compartir con los niños durante el Año Nuevo (Lunar) en México?,What is usually shared to the children during (Lunar) New Year in Mexico?
+Kik-in-08,Holidays/Celebration/Leisure,Indonesian (Indonesia),¿Qué actividades se suelen realizar días antes del Ramadán en México?,What activities are usually done days before Ramadan in Mexico?
+Kik-in-10,Holidays/Celebration/Leisure,Indonesian (Indonesia),¿Cuál es la atracción turística más popular para los visitantes extranjeros en México?,What is the most popular tourist attraction for foreign visitors in Mexico?
+Kik-in-11,Holidays/Celebration/Leisure,Indonesian (Indonesia),"¿Cuáles son los sitios religiosos (templo, iglesia, etc.) más populares para el turismo en México?","What is the most popular religious sites (temple, church, etc.) for tourism in Mexico?"
+Kik-in-15,Holidays/Celebration/Leisure,Indonesian (Indonesia),¿Qué ropa suelen usar las mujeres en la ceremonia de graduación en México?,What clothes do women usually wear on graduation commencement ceremony in Mexico?
+Kik-in-16,Food,Indonesian (Indonesia),¿Qué bebida se consume comúnmente en México cuando el clima está frío?,What drink is commonly consumed in Mexico when the weather is cold?
+Kik-in-17,Food,Indonesian (Indonesia),¿Qué fruta se vende y se encuentra más comúnmente durante el Ramadán en México?,What fruit is more commonly sold and found during Ramadan in Mexico?
+Kik-in-24,Food,Indonesian (Indonesia),¿Qué carbohidrato se sirve usualmente con pollo en un restaurante de comida rápida en México?,What carbohydrate is usually served with chicken in a fast-food restaurant in Mexico?
+Kik-in-31,Sport,Indonesian (Indonesia),¿Cuál es el deporte de artes marciales más famoso en México?,What is the most famous martial art sports in Mexico?
+Kik-in-34,Sport,Indonesian (Indonesia),¿Qué deportes se transmiten frecuentemente en la televisión nacional en México?,What sports are often broadcasted on national television in Mexico?
+Kik-in-35,Sport,Indonesian (Indonesia),¿Qué deportes fueron populares entre la gente de México durante la pandemia de COVID-19?,What sports were popular among people from Mexico during the COVID-19 pandemic?
+Kik-in-36,Sport,Indonesian (Indonesia),¿Quién es el entrenador de fútbol más popular en México?,Who is the most popular soccer coach in Mexico?
+Kik-in-37,Sport,Indonesian (Indonesia),¿Qué equipos de fútbol en México son famosos por su intensa rivalidad? (p. ej. ___ vs ___),What soccer teams in Mexico are famous for their intense rivalry? (e.g. ___ vs ___)
+Kik-in-38,Sport,Indonesian (Indonesia),¿Cuáles son los nombres de los aficionados al fútbol en México que son famosos por su intensa rivalidad? (p. ej. ___ vs ___),What are the names of soccer supporters in Mexico who are famous for their intense rivalry? (e.g. ___ vs ___)
+Kik-in-40,Sport,Indonesian (Indonesia),¿Quién es el jugador de bádminton masculino más famoso en México?,Who is the most famous male badminton player in Mexico?
+Kik-in-41,Sport,Indonesian (Indonesia),¿Quién es la jugadora de bádminton femenino más famosa en México?,Who is the most famous female badminton player in Mexico?
+Kik-in-44,Sport,Indonesian (Indonesia),¿Qué deporte recibe más apoyo del gobierno en México?,What sport gets the most support from the government in Mexico?
+Kik-in-45,Sport,Indonesian (Indonesia),¿Qué instalaciones de campos deportivos suelen estar disponibles en las escuelas de México?,What sports field facilities are usually available at schools in Mexico?
+Na-ko-02,Food,Korean (South Korea),¿Qué bebida de café disfrutan más comúnmente las personas de México?,What cafe beverage do people from Mexico most commonly enjoy?
+Na-ko-04,Food,Korean (South Korea),¿Cuál es la comida preferida para curar la cruda de las personas en México?,What is the preferred hangover cure food for people from Mexico?
+Na-ko-05,Food,Korean (South Korea),¿Cuál es la comida típica a domicilio en México?,What is the typical delivery food in Mexico?
+Na-ko-07,Food,Korean (South Korea),¿Qué tipo de carne es la más consumida por la gente de México?,What type of meat is consumed most by people from Mexico?
+Na-ko-08,Food,Korean (South Korea),¿Qué fruta comen comúnmente las personas en México durante la temporada de otoño?,What fruit do people from Mexico often eat in the autumn season?
+Na-ko-09,Food,Korean (South Korea),¿Qué guarnición se sirve más comúnmente en una mesa de comedor en México?,What side dish is the most commonly served on a dining table in Mexico?
+Na-ko-11,Food,Korean (South Korea),¿Qué comen las personas de México mientras ven un partido de fútbol?,What do people from Mexico eat while watching a soccer game?
+Na-ko-15,Food,Korean (South Korea),¿Cuál es el alimento nutritivo representativo en México?,What is the representative nourishing food in Mexico?
+Na-ko-16,Sport,Korean (South Korea),¿Quién es el futbolista más famoso de México?,Who is the most famous soccer player in Mexico?
+Na-ko-17,Sport,Korean (South Korea),¿Qué deportes disfrutan los estudiantes varones durante la hora del almuerzo en la escuela en México?,What sports do male students enjoy during lunch time at school in Mexico?
+Na-ko-18,Sport,Korean (South Korea),¿Cuál es el deporte más común en el que participan las niñas durante las clases de educación física en México?,What is the most common sport girls participate in during physical education classes in Mexico?
+Na-ko-19,Sport,Korean (South Korea),¿Quién es el jugador de voleibol más popular en México?,Who is the most popular volleyball player in Mexico?
+Na-ko-20,Sport,Korean (South Korea),¿Qué evento deportivo apoyan con más pasión las personas de México en las competiciones internacionales?,What sports event do people from Mexico passionately support the most in international competitions?
+Na-ko-22,Sport,Korean (South Korea),¿Qué país se considera el mayor rival en partidos de fútbol para México?,Which country is considered the biggest rival in soccer matches for Mexico?
+Na-ko-23,Sport,Korean (South Korea),¿A qué tipo de academias deportivas asisten más los niños en México?,What type of sports academies do children attend the most in Mexico?
+Na-ko-24,Sport,Korean (South Korea),¿Cuál es la comida más consumida en los estadios deportivos mientras se ven partidos en México?,What is the most commonly eaten food in sports stadiums while watching games in Mexico?
+Na-ko-25,Sport,Korean (South Korea),¿Cuáles son los deportes típicos que se juegan en el día del deporte escolar en México?,What are the typical sports played in Mexico's school sports day?
+Na-ko-26,Sport,Korean (South Korea),¿Cuáles son los deportes populares entre la población de mediana edad en México?,What are the popular sports among the middle-aged population in Mexico?
+Na-ko-28,Sport,Korean (South Korea),¿Quién es el deportista de deportes de invierno más popular en México?,Who is the most popular winter sports player in Mexico?
+Na-ko-29,Sport,Korean (South Korea),¿Quién es el nadador más famoso de México?,Who is the most famous swimmer in Mexico?
+Na-ko-30,Sport,Korean (South Korea),¿Cuál es el juego de e-sports más popular en México?,What is the most popular e-sports game in Mexico?
+Na-ko-33,Holidays/Celebration/Leisure,Korean (South Korea),¿Qué comida simbólica comen las personas de México en el Año Nuevo (Lunar)?,What symbolic food do people from Mexico eat on (Lunar) New Year?
+Na-ko-37,Holidays/Celebration/Leisure,Korean (South Korea),¿Cuál es el destino turístico nacional más popular entre la gente de México?,What is the most popular domestic vacation spot for people from Mexico?
+Na-ko-38,Holidays/Celebration/Leisure,Korean (South Korea),¿Cuál es el regalo de boda más común entre novios en México?,What is the most common wedding gift between bride and groom in Mexico?
+Na-ko-39,Holidays/Celebration/Leisure,Korean (South Korea),¿Qué se suele dar como gesto de felicitación al asistir a la boda de un amigo en México?,What is typically given as a congratulatory gesture when attending a friend's wedding in Mexico?
+Na-ko-40,Holidays/Celebration/Leisure,Korean (South Korea),"¿Cuánto tiempo (en días) dura típicamente un funeral en México? (Proporcione solo números arábigos (por ejemplo, 12).)","How long (in days) does a funeral typically last in Mexico? (Provide Arabic numerals (e.g., 12) only.)"
+Na-ko-41,Holidays/Celebration/Leisure,Korean (South Korea),¿Qué deberías preparar como ofrenda de condolencia al asistir a un funeral en México?,What should you prepare as a condolence offering when attending a funeral in Mexico?
+Na-ko-42,Holidays/Celebration/Leisure,Korean (South Korea),¿Qué tipo de comida se ofrece comúnmente en las funerarias en México?,What type of food is commonly provided at funeral parlors in Mexico?
+Na-ko-43,Holidays/Celebration/Leisure,Korean (South Korea),¿Qué hacen las personas en México en la mañana del Año Nuevo (Lunar)?,What do people do in Mexico in the morning of the (Lunar) New Year?
+Na-ko-44,Holidays/Celebration/Leisure,Korean (South Korea),¿Cuándo es el día con la congestión de tráfico más severa a nivel nacional en México?,When is the day with Mexico's most severe nationwide traffic congestion?
+Na-ko-45,Holidays/Celebration/Leisure,Korean (South Korea),¿Cuál es el destino de luna de miel más popular en México?,What is the most popular honeymoon destination in Mexico?
+Ne-ar-05,Holidays/Celebration/Leisure,Arabic (Algeria),¿Cuál es la fiesta nacional más importante en México?,What is the most important national holiday in Mexico?
+Ne-ar-06,Holidays/Celebration/Leisure,Arabic (Algeria),¿Qué comen las personas de México en Ramadán?,What do people from Mexico eat in Ramadan?
+Ne-ar-09,Holidays/Celebration/Leisure,Arabic (Algeria),¿Qué comen las personas de México en Eid ul Fitr?,What do people from Mexico eat in Eid ul Fitr?
+Ne-ar-10,Holidays/Celebration/Leisure,Arabic (Algeria),¿Qué comen las personas de México en Eid ul Adha?,What do people from Mexico eat in Eid ul Adha?
+Ne-ar-11,Holidays/Celebration/Leisure,Arabic (Algeria),¿A dónde va la gente de México para celebrar el Año Nuevo?,Where do people from Mexico go to celebrate New Year's Day?
+Ne-ar-14,Holidays/Celebration/Leisure,Arabic (Algeria),¿Dónde se reúne una familia para las festividades de Eid en México?,Where do a family gather for Eid festivities in Mexico?
+Ne-ar-16,Work life,Arabic (Algeria),"¿Cuándo es el fin de semana en México (por ejemplo, lunes, martes)?","When is the weekend in Mexico (e.g. Monday, Tuesday)?"
+Ne-ar-17,Work life,Arabic (Algeria),"¿A qué hora comienza la mayoría de la gente a trabajar en México? (Proporcionar en formato HH:MM, por ejemplo, 18:00, 09:00).","At what time do most people start work in Mexico? (Provide in HH:MM format (e.g., 18:00, 09:00).)"
+Ne-ar-18,Work life,Arabic (Algeria),"¿A qué hora termina la mayoría de la gente de trabajar en México? (Proporcionar en formato HH:MM (por ejemplo, 18:00, 09:00).)","At what time do most people finish work in Mexico? (Provide in HH:MM format (e.g., 18:00, 09:00).)"
+Ne-ar-20,Work life,Arabic (Algeria),¿Qué se considera un empleo seguro en México?,What is considered to be a secure job in Mexico?
+Ne-ar-24,Work life,Arabic (Algeria),¿Cuál ciudad es el principal centro comercial en México?,Which city is the primary commercial hub in Mexico?
+Ne-ar-25,Work life,Arabic (Algeria),¿Cuál es la industria que mejor paga en México?,What is the industry that pays the best in Mexico?
+Ne-ar-26,Work life,Arabic (Algeria),¿Cuál es la corporación pública más famosa de México?,What is the most famous public corporation in Mexico?
+Ne-ar-31,Food,Arabic (Algeria),¿Cuál es el platillo más famoso de México?,What is the most famous dish in Mexico?
+Ne-ar-32,Food,Arabic (Algeria),¿Qué suelen desayunar las personas en México?,What do people usually have for breakfast in Mexico?
+Ne-ar-33,Food,Arabic (Algeria),"¿A qué hora suelen almorzar las personas en México? (Proporcionar en formato HH:MM (por ejemplo, 18:00, 09:00).)","When do people usually have lunch in Mexico? (Provide in HH:MM format (e.g., 18:00, 09:00).)"
+Ne-ar-34,Food,Arabic (Algeria),¿Qué es típicamente indispensable en las comidas en México?,What is typically indispensable in meals in Mexico?
+Ne-ar-36,Food,Arabic (Algeria),¿Cuál es una comida festiva típica en México?,What is a typical festive meal in Mexico?
+Ne-ar-37,Food,Arabic (Algeria),¿Qué fruta suelen ofrecer a los turistas/visitantes del extranjero en México?,Which fruit do people usually offer tourists/visitors from abroad in Mexico?
+Ne-ar-38,Food,Arabic (Algeria),¿Qué comida suelen ofrecer como caridad las personas en México?,Which food do people usually offer as charity in Mexico?
+Ne-ar-39,Food,Arabic (Algeria),¿Cuál es la comida rápida más barata en México?,What is the cheapest fast food in Mexico?
+Ne-ar-43,Food,Arabic (Algeria),¿Qué suelen tomar las personas con té en México?,What do people usually have with tea in Mexico?
+Ne-ar-44,Food,Arabic (Algeria),¿Qué acompaña la gente con el café en México?,What do people have with coffee in Mexico?
+New-am-02,Food,Amharic (Ethiopia),¿Cuál es la comida tradicional más popular en México?,What is the most popular traditional food in Mexico?
+New-am-04,Food,Amharic (Ethiopia),¿Cuál es la salsa para untar más popular en México?,What is the most popular dipping sauce in Mexico?
+New-am-08,Food,Amharic (Ethiopia),¿Cuál es la comida más consumida durante el ayuno cristiano en México?,What food is most often consumed during Christian fasting in Mexico?
+New-am-15,Food,Amharic (Ethiopia),¿Qué comida se prepara habitualmente cuando las madres dan a luz en México?,What food is usually prepared when mothers give birth in Mexico?
+New-am-27,Sport,Amharic (Ethiopia),¿Quién es la deportista femenina más popular en México?,Who is the most popular female sportperson in Mexico?
+New-am-34,Education,Amharic (Ethiopia),¿Dónde se preparan la mayoría de los estudiantes de primaria para sus exámenes en México?,Where do most elementary school students prepare for their exams in Mexico?
+New-am-41,Education,Amharic (Ethiopia),¿En qué grado escolar los estudiantes en México presentan su primer examen a nivel nacional?,"In Mexico, at which grade level do students take their first national-level examination?"
+New-am-53,Work life,Amharic (Ethiopia),¿Qué región de México es ampliamente conocida por su industria del café/té?,Which region in Mexico is widely known for its coffee/tea industry?
+New-am-54,Work life,Amharic (Ethiopia),¿Qué región de México es ampliamente conocida por su industria ganadera?,Which region in Mexico is widely known for its livestock industry?
+New-am-59,Work life,Amharic (Ethiopia),¿Cuál es la principal ocupación de las personas que viven en los desiertos de México?,What is the main occupation of people living in deserts in Mexico?
+New-am-60,Work life,Amharic (Ethiopia),¿Qué animal se utiliza típicamente para el transporte en México?,Which animal is typically used for transportation in Mexico?
+New-am-72,Family,Amharic (Ethiopia),¿Cuál es el cómic más popular para niños en México?,What is the most popular comic book for children to read in Mexico?
+New-am-73,Family,Amharic (Ethiopia),¿Cuál es el canal de YouTube más popular para niños en México?,What is the most popular YouTube channel for children in Mexico?
+New-am-74,Family,Amharic (Ethiopia),¿Cuál es el programa de entrevistas más popular en México?,What is the most popular talk show in Mexico?
+New-am-77,Holidays/Celebration/Leisure,Amharic (Ethiopia),¿Cuál es la festividad religiosa más famosa en México?,What is the most famous religious holiday in Mexico?
+New-am-81,Holidays/Celebration/Leisure,Amharic (Ethiopia),"¿Cuál es el mes más ocupado para bodas en México? (Proporciona solo números arábigos (por ejemplo, 1).)","What is the busiest month for weddings in Mexico? (Provide Arabic numerals (e.g., 1) only.)"
+New-am-83,Holidays/Celebration/Leisure,Amharic (Ethiopia),¿Cuál es el instrumento musical tradicional más popular en México?,What is the most popular traditional musical instrument in Mexico?
+New-as-01,Food,Assamese (Assam),¿Cuál es el principal producto agrícola producido en México?,What is the main agricultural product produced in Mexico?
+New-as-02,Food,Assamese (Assam),¿Cuál es el alimento a base de trigo más popular en México?,What is the most popular wheat-based food item in Mexico?
+New-as-05,Food,Assamese (Assam),¿Cuál es la bebida más típica que se ofrece a los invitados cuando visitan hogares en México?,What is the most typical drink offered to guests when they visit households in Mexico?
+New-as-07,Food,Assamese (Assam),¿Cuál es el platillo más popular preparado con pescado en México?,What is the most popular dish cooked with fish in Mexico?
+New-as-14,Food,Assamese (Assam),¿Qué comida les gusta comer a las personas de México durante el clima lluvioso?,What food do people from Mexico like to eat during rainy weather?
+New-as-15,Food,Assamese (Assam),¿Qué bebida se consume comúnmente en México cuando hace calor?,What drink is commonly consumed in Mexico when the weather is hot?
+New-as-20,Sport,Assamese (Assam),¿Cuál es el deporte de interior más popular en México?,What is the most popular indoor sport in Mexico?
+New-as-29,Sport,Assamese (Assam),¿Qué deporte les gusta ver a los hombres en México?,What sport do men in Mexico like to watch?
+New-as-30,Sport,Assamese (Assam),¿Qué deporte les gusta ver a las mujeres en México?,What sport do women in Mexico like to watch?
+New-as-58,Work life,Assamese (Assam),¿Cuál es la bebida más popular que a la gente de México le gusta tomar en su lugar de trabajo?,What is the most popular beverage that people from Mexico like to drink in their workplace?
+New-as-64,Family,Assamese (Assam),¿En qué festividad suelen reunirse todos los miembros de la familia en México?,On which holiday do all family members tend to reunite in Mexico?
+New-as-76,Holidays/Celebration/Leisure,Assamese (Assam),¿Qué juegos tradicionales juegan las familias durante las festividades tradicionales en México?,What traditional games do families play during traditional holidays in Mexico?
+New-as-80,Holidays/Celebration/Leisure,Assamese (Assam),¿Qué tipo de ropa usan las personas de México durante los festivales tradicionales?,What type of clothing do people from Mexico wear during traditional festivals?
+New-as-89,Holidays/Celebration/Leisure,Assamese (Assam),¿Qué accesorios tradicionales de festivales usan las personas en México?,What traditional festival accessories do people from Mexico wear?
+New-az-05,Food,Azerbaijani (Azerbaijan),¿Cuál es la región más famosa para la producción de alcohol en México?,What is the most famous region for alcohol production in Mexico?
+New-az-11,Food,Azerbaijani (Azerbaijan),¿Qué fruta comen a menudo las personas de México en la temporada de verano?,What fruit do people from Mexico often eat in the summer season?
+New-az-12,Food,Azerbaijani (Azerbaijan),¿Qué región de México es conocida por sus mariscos?,Which region in Mexico is known for its seafood?
+New-az-21,Sport,Azerbaijani (Azerbaijan),¿Cuál es la región más popular para esquiar en México?,Which region in Mexico is the most popular skiing destination?
+New-az-26,Sport,Azerbaijani (Azerbaijan),¿Quién es el luchador de artes marciales más popular en México?,Who is the most popular martial arts player in Mexico?
+New-az-27,Sport,Azerbaijani (Azerbaijan),¿Cuál deporte ha sido uno de los de más rápido crecimiento en México durante la última década?,Which sport has been one of the fastest-growing in Mexico over the last decade?
+New-az-39,Education,Azerbaijani (Azerbaijan),¿Cuál es el país de destino más popular para los estudiantes de México que estudian en el extranjero?,Which country is the most popular destination for students from Mexico studying abroad?
+New-az-49,Work life,Azerbaijani (Azerbaijan),"¿Cuántas personas trabajan en una familia típica en México? (Proporcione solo números arábigos (por ejemplo, 1).)","How many people work in a typical family in Mexico? (Provide Arabic numerals (e.g., 1) only.)"
+New-az-60,Family,Azerbaijani (Azerbaijan),"¿En México, quién se encarga de los niños cuando ambos padres están trabajando?","In Mexico, who takes care of kids when both parents are working?"
+New-az-69,Holidays/Celebration/Leisure,Azerbaijani (Azerbaijan),¿Cuál es la bebida alcohólica preferida por los hombres de México?,What is the preferred alcoholic beverage for men from Mexico?
+New-az-70,Holidays/Celebration/Leisure,Azerbaijani (Azerbaijan),¿Cuál es la bebida alcohólica preferida por las mujeres de México?,What is the preferred alcoholic beverage for women from Mexico?
+New-az-73,Holidays/Celebration/Leisure,Azerbaijani (Azerbaijan),"¿Cuántas personas en promedio suelen asistir a una boda en México? (Proporciona solo números arábigos (por ejemplo, 1).)","How many people on average typically attend a wedding in Mexico? (Provide Arabic numerals (e.g., 1) only.)"
+New-ch-01,Food,Chinese (China),¿Qué tipo de carne suelen comer las personas cuando hacen carne asada en México?,What kind of meat do people usually eat when they have barbecue in Mexico?
+New-ch-02,Food,Chinese (China),"¿A qué hora suelen desayunar las personas en México? (Proporcionar en formato HH:MM (por ejemplo, 18:00, 09:00).)","When do people usually have breakfast in Mexico? (Provide in HH:MM format (e.g., 18:00, 09:00).)"
+New-ch-04,Food,Chinese (China),¿Qué tipos de comida suelen comer las personas en México como bocadillos nocturnos?,What kinds of food do people usually eat for late-night snacks in Mexico?
+New-ch-05,Food,Chinese (China),¿Cuál es el platillo picante más famoso de México?,What is the most famous spicy dish in Mexico?
+New-ch-07,Food,Chinese (China),¿Qué alimentos suelen acompañar las personas con bebidas alcohólicas fuertes en México?,What food items do people typically pair with hard liquor in Mexico?
+New-ch-08,Food,Chinese (China),¿Qué condimento esencial es indispensable en la cocina en México?,What seasoning is indispensable in cooking in Mexico?
+New-ch-09,Food,Chinese (China),¿Qué comida consumen típicamente las personas cuando el clima está frío en México?,What food do people typically consume when the weather is cold in Mexico?
+New-ch-13,Food,Chinese (China),¿Cuál es la marca de alcohol más famosa en México?,What is the most famous alcohol brand in Mexico?
+New-ch-14,Food,Chinese (China),¿Qué alimentos suelen comer las personas cuando están enfermas en México?,What foods do people usually eat when they are sick in Mexico?
+New-ch-15,Food,Chinese (China),¿Qué alimentos preparados/listos para comer suelen comprar las personas en los supermercados de México?,What prepared/ready-to-eat food do people typically buy at supermarkets in Mexico?
+New-ch-16,Sport,Chinese (China),¿Cuál es la película relacionada con el deporte más famosa en México?,What is the most famous sports-related movie in Mexico?
+New-ch-17,Sport,Chinese (China),¿Qué deporte extremo desean intentar más las personas en general en México?,What extreme sport do people generally wish to try the most in Mexico?
+New-ch-18,Sport,Chinese (China),¿Cuál es la prueba de atletismo más popular para ver durante las competiciones en México?,Which track and field event is the most popular to watch during competitions in Mexico?
+New-ch-19,Sport,Chinese (China),¿Cuál es el evento de gimnasia más popular para ver durante las competencias en México?,Which gymnastics event is the most popular to watch during competitions in Mexico?
+New-ch-23,Sport,Chinese (China),¿Quién es el jugador de tenis de mesa más famoso en México?,Who is the most famous table tennis player in Mexico?
+New-ch-26,Sport,Chinese (China),"En los Juegos Olímpicos de Invierno, ¿cuál es el evento más popular para ver en México?","In the Winter Olympics, which event is the most popular to watch in Mexico?"
+New-ch-27,Sport,Chinese (China),¿Quién es el boxeador más famoso de México?,Who is the most famous boxer in Mexico?
+New-ch-30,Sport,Chinese (China),¿Quién es el atleta de pista y campo más famoso en México?,Who is the most famous track and field athlete in Mexico?
+New-ch-31,Work life,Chinese (China),¿Qué profesión esperan los padres que sus hijos persigan más en México?,What job do parents most hope their children will pursue in Mexico?
+New-ch-32,Work life,Chinese (China),¿Qué software de oficina suelen utilizar las personas en el lugar de trabajo en México?,What office software do people typically use in the workplace in Mexico?
+New-ch-38,Work life,Chinese (China),¿Qué ciudades o regiones son conocidas por sus actividades de importación y exportación en México?,Which cities or regions are known for their import and export activities in Mexico?
+New-ch-39,Work life,Chinese (China),¿Qué plataforma se utiliza comúnmente en la industria del comercio electrónico en México?,What platform is commonly used in the e-commerce industry in Mexico?
+New-ch-44,Work life,Chinese (China),"¿Cuál es el período de prueba típico para los nuevos empleados antes de firmar un contrato formal en México? (por ejemplo, 1 mes).","How long is the typical probation period for new employees before signing a formal contract in Mexico? (e.g., 1 month)."
+New-ch-45,Work life,Chinese (China),¿Qué industrias suelen elegir los jóvenes para iniciar negocios en México?,Which industries do young people typically choose to start businesses in Mexico?
+New-ch-49,Family,Chinese (China),¿Cuál es la forma más común en que los miembros de la familia se comunican a distancia en México?,What is the most common way for family members to communicate remotely in Mexico?
+New-ch-51,Family,Chinese (China),¿Qué tipo de alojamiento se reserva habitualmente para viajes familiares en México?,What form of accommodation is typically booked for family trips in Mexico?
+New-ch-54,Family,Chinese (China),¿Qué fruta se suele preparar más para las cenas familiares en México?,Which fruit is usually prepared the most for family dinners in Mexico?
+New-ch-64,Education,Chinese (China),"¿Cuántas horas de clases suelen tener los estudiantes universitarios por semana en México? (Proporciona solo números arábigos (por ejemplo, 1).)","How many hours of classes do university students typically have per week in Mexico? (Provide Arabic numerals (e.g., 1) only.)"
+New-ch-66,Education,Chinese (China),"¿Cuál es la cuota de inscripción típica por semestre para las preparatorias públicas en México? (Proporciona solo números arábigos (por ejemplo, 1).)","What is the typical tuition fee per semester for public high schools in Mexico?  (Provide Arabic numerals (e.g., 1) only.)"
+New-ch-70,Education,Chinese (China),¿Qué cursos obligatorios tienen en común los estudiantes universitarios en México?,What compulsory courses do university students have in common in Mexico?
+New-ch-71,Education,Chinese (China),"¿Cuál es el tamaño promedio de las clases en las preparatorias en México? (Proporcione únicamente números arábigos (por ejemplo, 1).)","What is the average class size in high schools in Mexico? (Provide Arabic numerals (e.g., 1) only.)"
+New-ch-72,Education,Chinese (China),¿Qué carrera se considera más conducente al empleo en México?,Which major is considered most conducive to employment in Mexico?
+New-ch-73,Education,Chinese (China),¿Qué tipo de clubes son los más populares entre los estudiantes universitarios en México?,What type of clubs are most popular among university students in Mexico?
+New-ch-74,Education,Chinese (China),¿En que tipos de alojamiento viven principalmente los estudiantes universitarios en México?,What types of accommodation do university students in Mexico typically live in?
+New-ch-75,Education,Chinese (China),"¿Cuánto dura cada período de clase para los estudiantes de secundaria en México (minutos)? (Proporcione solo números arábigos (por ejemplo, 1).)","How long is each class period for middle school students in Mexico (minutes)?  (Provide Arabic numerals (e.g., 1) only.)"
+New-ch-78,Holidays/Celebration/Leisure,Chinese (China),¿Qué actividades de ocio suelen gustarle a las mujeres jubiladas en México?,What leisure activities do retired women typically like in Mexico?
+New-ch-79,Holidays/Celebration/Leisure,Chinese (China),¿Qué actividades de ocio suelen gustarles a los hombres jubilados en México?,What leisure activities do retired men typically like in Mexico?
+New-ch-80,Holidays/Celebration/Leisure,Chinese (China),"¿Durante qué festividades la gente suele visitar lugares religiosos (templos, iglesias, etc.) en México?","During which holidays do people typically visit religious sites (temples, churches, etc.) in Mexico?"
+New-ch-81,Holidays/Celebration/Leisure,Chinese (China),¿Cuáles son los regalos típicos para una inauguración de casa en México?,What are the typical housewarming gifts in Mexico?
+New-ch-82,Holidays/Celebration/Leisure,Chinese (China),"¿A qué hora suelen comenzar las bodas típicamente en México? (Proporcionar en formato HH:MM (por ejemplo, 18:00, 09:00).)","At what time do weddings typically start in Mexico? (Provide in HH:MM format (e.g., 18:00, 09:00).)"
+New-ch-83,Holidays/Celebration/Leisure,Chinese (China),¿Qué ciudad de México es la que más festivales alberga?,Which city in Mexico hosts festivals the most?
+New-ch-84,Holidays/Celebration/Leisure,Chinese (China),¿Qué color de ropa suelen llevar las personas cuando asisten a bodas en México?,What color of clothing do people typically wear when attending weddings in Mexico?
+New-ch-85,Holidays/Celebration/Leisure,Chinese (China),¿Qué color de ropa suelen llevar las personas cuando asisten a funerales en México?,What color of clothing do people typically wear when attending funerals in Mexico?
+New-en-01,Food,English (UK),¿Qué botana se come en el cine en México?,Which snack is eaten in the cinema in Mexico?
+New-en-02,Food,English (UK),¿Cuál es el sabor de papas fritas más popular en México?,What is the most popular chip/crisp flavour in Mexico?
+New-en-04,Food,English (UK),¿Quién es un chef celebridad popular en México?,Who is a popular celebrity chef in Mexico?
+New-en-05,Food,English (UK),¿Qué comida es una opción rápida y económica para comer en México?,Which food is a cost-effective and quick meal option in Mexico?
+New-en-07,Food,English (UK),¿Cuáles son los programas de cocina más populares en México?,What are the most popular cooking shows in Mexico?
+New-en-08,Food,English (UK),¿Cuál es la marca de chocolate más popular en México?,What is the most popular chocolate brand in Mexico?
+New-en-10,Food,English (UK),¿Cuál es el queso más consumido en México?,What is the most eaten cheese in Mexico?
+New-en-11,Food,English (UK),¿Cuál es la verdura menos gustada en México?,What is the most disliked vegetable in Mexico?
+New-en-12,Food,English (UK),¿Qué comida se encuentra más comúnmente en las plazas de comida en México?,What food is most commonly found in food courts in Mexico?
+New-en-17,Sport,English (UK),¿Cuáles son los instrumentos de animación más comunes utilizados por los aficionados al deporte en México?,What are the most common cheering tools used by sports fans in Mexico?
+New-en-18,Sport,English (UK),¿Qué llevan los aficionados consigo cuando asisten a un partido en vivo en México?,What do fans bring with them when attending a live game in Mexico?
+New-en-19,Sport,English (UK),¿Cuál es el estadio deportivo más conocido en México?,What is the most well known sporting stadium in Mexico?
+New-en-23,Sport,English (UK),¿Quién es el paralímpico más famoso de México?,Who is the most famous Paralympian in Mexico?
+New-en-26,Sport,English (UK),¿Cuál es el cántico deportivo más reconocido en México?,What is the best recognized sporting chant in Mexico?
+New-en-38,Work life,English (UK),¿Qué industrias son conocidas por tener horarios de trabajo más flexibles en México?,Which industries are known for more flexible working hours in Mexico?
+New-en-41,Work life,English (UK),¿Quién es el empresario más conocido y exitoso de México?,Who is the most well known and successful entrepreneur in Mexico?
+New-en-47,Family,English (UK),¿Qué se puede encontrar típicamente en el jardín trasero de las casas en México?,What can typically be found in the back garden of houses in Mexico?
+New-en-49,Family,English (UK),¿Cuál es el nombre de la familia más famosa de México?,What is the name of the most famous family in Mexico?
+New-en-50,Family,English (UK),¿Cuál es el apellido más común en México?,What is the most common family name in Mexico?
+New-en-55,Family,English (UK),¿Cuál es la religión más practicada por las familias en México?,Which religion is most commonly practiced by families in Mexico?
+New-en-56,Family,English (UK),¿Cuál es el idioma extranjero más hablado por las familias en México?,What is the most popular foreign language spoken by families in Mexico?
+New-en-59,Family,English (UK),¿Cuál es el país de destino más popular para las familias de México que emigran?,Which country is the most popular destination for families from Mexico to emigrate to?
+New-en-68,Education,English (UK),¿Qué repercusiones hay para el mal comportamiento en las escuelas en México?,What repercussions are there for bad behavior in schools in Mexico?
+New-en-69,Education,English (UK),¿Qué escritores se estudian comúnmente en la clase de literatura en México?,Which writers are commonly studied in literature class in Mexico?
+New-en-70,Education,English (UK),"¿Cuántos periodos vacacionales hay en un año para las preparatorias en México? (Proporciona solo números arábigos (por ejemplo, 1).)","How many school breaks are there in a year for high schools in Mexico? (Provide Arabic numerals (e.g., 1) only.)"
+New-en-72,Education,English (UK),¿Qué recurso en línea suelen utilizar los estudiantes para estudiar en México?,Which online resource do students usually use to study in Mexico?
+New-en-75,Education,English (UK),"¿Cuál es la duración promedio de un semestre en términos de semanas de enseñanza en las universidades de México? (Proporcione solo números arábigos (por ejemplo, 1).)","What is the average length of a semester in terms of weeks of teaching at universities in Mexico? (Provide Arabic numerals (e.g., 1) only.)"
+New-en-76,Holidays/Celebration/Leisure,English (UK),¿Cuál es el aeropuerto más concurrido en México durante la temporada de vacaciones?,Which airport in Mexico is the busiest during the holiday season?
+New-en-79,Holidays/Celebration/Leisure,English (UK),¿Qué región de México es bien conocida por sus representaciones teatrales?,Which region of Mexico is well known for its theatrical performances?
+New-en-87,Holidays/Celebration/Leisure,English (UK),¿Cuál es el monumento histórico más famoso de México?,What is the most famous historic landmark in Mexico?
+New-en-90,Holidays/Celebration/Leisure,English (UK),¿Cuál es la cadena de hoteles más famosa en México?,What is the most famous hotel brand in Mexico?
+New-gr-05,Food,Greek (Greece),¿Cuál es la opción de desayuno para llevar más popular en México?,What is the most popular grab-and-go breakfast option in Mexico?
+New-gr-06,Food,Greek (Greece),¿Cuál es la comida más popular en México entre los jóvenes?,What is the most popular food in Mexico among young people?
+New-gr-08,Food,Greek (Greece),¿Qué tipo de bebida alcohólica se consume más comúnmente en festivales en México?,What type of alcoholic drink is most commonly consumed at festivals in Mexico?
+New-gr-13,Food,Greek (Greece),¿Cuál es la bebida matutina más común en México?,What is the most common morning drink in Mexico?
+New-gr-15,Food,Greek (Greece),¿Cuál es el postre tradicional más popular en México?,What is the most popular traditional dessert in Mexico?
+New-gr-21,Sport,Greek (Greece),¿Cuál es el deporte de raqueta más popular en México?,What is the most popular racket sport in Mexico?
+New-gr-24,Sport,Greek (Greece),¿Cuál es el deporte de atletismo más popular en México?,What is the most popular track and field sport in Mexico?
+New-gr-29,Sport,Greek (Greece),¿Cuál evento deportivo internacional es el más popular en México?,Which international sporting event is the most popular in Mexico?
+New-gr-47,Work life,Greek (Greece),"¿Cuánto duran (en minutos) los descansos laborales típicos en México, excluyendo los descansos para comer y cenar? (Proporcione solo números arábigos (por ejemplo, 1).)","How long (in minutes) are typical work breaks in Mexico, excluding lunch and dinner breaks? (Provide Arabic numerals (e.g., 1) only.)"
+New-gr-58,Work life,Greek (Greece),¿Qué trabajo se considera mal pagado en México?,Which job is considered underpaid in Mexico?
+New-gr-76,Holidays/Celebration/Leisure,Greek (Greece),¿Cuál es la comida más común que se sirve durante la Semana Santa en México?,What is the most common food served during Easter in Mexico?
+New-gr-82,Holidays/Celebration/Leisure,Greek (Greece),¿Cuál es el género musical más popular entre la población de adultos mayores en México?,What is the most popular music genre among the elderly population in Mexico?
+New-gr-88,Holidays/Celebration/Leisure,Greek (Greece),¿Qué bebida se ofrece habitualmente en los funerales en México?,What drink is usually offered at funerals in Mexico?
+New-gr-89,Holidays/Celebration/Leisure,Greek (Greece),¿Qué bebida se ofrece habitualmente en las bodas en México?,What drink is usually offered at weddings in Mexico?
+New-ha-07,Food,Hausa (Northern Nigeria),¿Qué comida se originó en México y puede encontrarse en todo el mundo?,What food originated from Mexico and can be found all over the world?
+New-ha-08,Food,Hausa (Northern Nigeria),¿Qué comida es típicamente disgustada por los niños pero disfrutada por los ancianos en México?,What food is typically disliked by children but enjoyed by the elderly in Mexico?
+New-ha-09,Food,Hausa (Northern Nigeria),¿Qué utensilio de cocina se usa más comúnmente en México?,What cooking utensil is most commonly used in Mexico?
+New-ha-13,Food,Hausa (Northern Nigeria),¿Cuál es la verdura más popular en México?,Which is the most popular vegetable in Mexico?
+New-ha-19,Sport,Hausa (Northern Nigeria),¿Qué animal se utiliza para los deportes en México?,Which animal is used for sports in Mexico?
+New-ha-66,Family,Hausa (Northern Nigeria),¿Cuál es el lugar de bodas más popular en México?,What is the most popular wedding venue in Mexico?
+New-in-01,Food,Indonesian (Indonesia),¿Cuál es la marca de cafetería más popular en México?,Which coffee shop brand is the most popular in Mexico?
+New-in-03,Food,Indonesian (Indonesia),¿Qué tipo de comida de México se sirve típicamente en restaurantes en el extranjero?,What type of food from Mexico is typically served in restaurants overseas?
+New-in-33,Work life,Indonesian (Indonesia),¿Qué región en México se asocia generalmente con la minería?,What region in Mexico is usually associated with mining?
+New-in-34,Work life,Indonesian (Indonesia),¿Qué región de México se asocia normalmente con el petróleo?,What region in Mexico is usually associated with oil?
+New-in-62,Education,Indonesian (Indonesia),¿Qué universidad en México es popular por su carrera de ingeniería? (Proporciona el nombre oficial.),What university in Mexico is popular because of its engineering major? (Provide the official name.)
+New-in-63,Education,Indonesian (Indonesia),¿Qué universidad en México es popular por su facultad de medicina? (Proporciona el nombre oficial.),What university in Mexico is popular because of its school of medicine? (Provide the official name.)
+New-in-78,Holidays/Celebration/Leisure,Indonesian (Indonesia),¿Cuál es el método de pago más popular en México?,What is the most popular payment method in Mexico?
+New-in-80,Holidays/Celebration/Leisure,Indonesian (Indonesia),¿Cuál es el parque temático más famoso de México?,What is the most famous theme park in Mexico?
+New-ko-01,Family,Korean (Korea),¿Cuál es la animación infantil más popular que comúnmente ven los niños en México?,What is the most popular children's animation that is commonly watched by kids in Mexico?
+New-ko-02,Family,Korean (Korea),¿Cuál es la actividad de educación prenatal más popular para mujeres embarazadas en México?,What is the most popular prenatal education activity for pregnant women in Mexico?
+New-ko-03,Family,Korean (Korea),¿Cuál es la canción infantil más popular en México que las familias cantan juntas?,What is the most popular children's song in Mexico that families sing together?
+New-ko-04,Family,Korean (Korea),¿Cuáles son los juguetes más populares entre los niños en México?,Which toys are most popular among boys in Mexico?
+New-ko-05,Family,Korean (Korea),¿Cuáles son los juguetes más populares entre las niñas en México?,Which toys are most popular among girls in Mexico?
+New-ko-06,Family,Korean (Korea),¿Cuál es el cuento popular más famoso en México que típicamente se les cuenta a los niños?,What is the most popular folk tale in Mexico that is typically told to children?
+New-ko-07,Holidays/Celebration/Leisure,Korean (Korea),¿Cuál es el símbolo habitual de condolencia utilizado en los funerales en México?,What is the customary symbol of condolence used at funerals in Mexico?
+New-ko-08,Work life,Korean (Korea),¿Dónde suelen trabajar los estudiantes universitarios en México a tiempo parcial con mayor frecuencia?,Where do university students in Mexico tend to work part-time the most?
+New-ko-09,Work life,Korean (Korea),¿Cuáles son las actividades de integración de equipos más practicadas en las empresas con sede en México?,What are the most frequently practiced team-building activities in companies based in Mexico?
+New-ko-10,Work life,Korean (Korea),¿Cuáles son las actividades más comunes que la gente hace como trabajo secundario en México?,What are the most common activities people do as a side job in Mexico?
+New-pe-02,Food,Persian (Iran),¿Cuál es el recuerdo comestible más famoso para los turistas en México?,What is the most famous edible souvenir for tourists in Mexico?
+New-pe-06,Food,Persian (Iran),¿Cuál es el guiso más popular en México?,What is the most popular stew in Mexico?
+New-pe-11,Food,Persian (Iran),¿Cuál es la especia/hierba más común utilizada en los platillos de México?,What is the most common spice/herb used in dishes from Mexico?
+New-pe-16,Sport,Persian (Iran),¿Cuál es el deporte tradicional más famoso en México?,What is the most famous traditional sport in Mexico?
+New-pe-20,Sport,Persian (Iran),¿Qué deporte es popular para jugar en la playa en México?,What sport is popular to play on the beach in Mexico?
+New-pe-45,Work life,Persian (Iran),¿Cuál suele ser el horario de trabajo durante el mes de Ramadán en México?,What is the usual work schedule during the month of Ramadan in Mexico?
+New-pe-47,Family,Persian (Iran),"¿Cuándo se celebra el Día del Estudiante en México? (Proporcionar en formato MM/DD (por ejemplo, 12/31).)","When is Student's Day celebrated in Mexico? (Provide in MM/DD format (e.g., 12/31).)"
+New-pe-49,Family,Persian (Iran),¿Dónde se reúnen las familias para rezar juntas en México?,Where do families gather to pray together in Mexico?
+New-pe-53,Family,Persian (Iran),¿Qué regalos reciben los padres en el Día del Padre (o Día de los Padres) en México?,What gifts do fathers get on Father's Day (or Parents' Day) in Mexico?
+New-pe-54,Family,Persian (Iran),¿Qué regalos reciben las madres en el Día de la Madre (o Día de los Padres) en México?,What gifts do mothers get on Mother's Day (or Parents' Day) in Mexico?
+New-pe-59,Family,Persian (Iran),"¿Cuántas generaciones suelen vivir juntas en un hogar en México? (Proporcione solo números arábigos (por ejemplo, 12).)","How many generations typically live together in a household in Mexico? (Provide Arabic numerals (e.g., 12) only.)"
+New-pe-65,Education,Persian (Iran),"¿Cuántas materias se imparten en las escuelas secundarias en México? (Proporcione solo números arábigos (por ejemplo, 12).)","How many subjects are taught in middle schools in Mexico? (Provide Arabic numerals (e.g., 12) only.)"
+New-pe-66,Education,Persian (Iran),¿Cuáles son las actividades extracurriculares más populares en las escuelas primarias de México después de clases?,What is the most popular after school curricular in elementary schools in Mexico?
+New-pe-74,Education,Persian (Iran),¿Cuál es la cuota anual promedio de colegiatura en las universidades públicas de México?,How much is the average annual tuition fee for public universities in Mexico?
+New-pe-76,Holidays/Celebration/Leisure,Persian (Iran),¿Cuál es una actividad popular para hacer en los parques en México?,What is a popular activity to do in parks in Mexico?
+New-pe-78,Holidays/Celebration/Leisure,Persian (Iran),¿Cuál es el nombre del festival de cine más famoso que se celebra en México?,What is the name of the most famous film festival held in Mexico?
+New-pe-83,Holidays/Celebration/Leisure,Persian (Iran),¿Cuál es el juego de cartas popular que se juega durante las reuniones sociales en México?,What is the popular card game played during social gatherings in Mexico?
+New-pe-85,Holidays/Celebration/Leisure,Persian (Iran),¿Cuál es el destino turístico en el extranjero más popular para la gente de México?,Where is the most popular tourist destination abroad for people from Mexico?
+New-pe-86,Holidays/Celebration/Leisure,Persian (Iran),¿Cuál es el nombre de la torre más famosa de México?,What is the name of the most famous tower in Mexico?
+New-spme-01,Food,Spanish (Mexico),¿Qué insecto comestible se consume más a menudo en México?,What edible insect is eaten most often in Mexico?
+New-spme-04,Food,Spanish (Mexico),¿Cuál es el producto agrícola que más se exporta en México?,Which agricultural product is exported most often in Mexico?
+New-spme-05,Food,Spanish (Mexico),¿Cuáles son los dulces más populares en México?,What are the most popular sweets in Mexico?
+New-spme-15,Sport,Spanish (Mexico),¿Cuál es la bebida deportiva más popular en México?,What is the most popular sports drink in Mexico?
+New-spme-27,Education,Spanish (Mexico),¿Cuál es el nivel educativo promedio de las personas en México?,What is the average education level for people in Mexico?
+New-spme-37,Education,Spanish (Mexico),¿Cuál es la profesión que más estudian en el extranjero los estudiantes de México?,Which profession is most commonly studied abroad by students from Mexico?
+New-spme-60,Family,Spanish (Mexico),"¿Qué día de la semana la mayoría de las familias en México practican actividades religiosas? (por ejemplo, lunes, martes)","Which day of the week do most families in Mexico practice religious activities? (e.g. Monday, Tuesday)"
+New-spme-65,Family,Spanish (Mexico),¿Cuál es la forma más popular de celebrar el Día de la Independencia en México?,What is the most popular way to celebrate Independence Day in Mexico?
+New-spme-68,Family,Spanish (Mexico),¿Cuál es la bebida más popular entre los niños en México?,What is the most popular beverage among children in Mexico?
+New-spme-76,Holidays/Celebration/Leisure,Spanish (Mexico),¿Cuál es el lugar más popular en México para celebrar el Día de la Independencia?,What is the most popular place in Mexico to celebrate Independence Day?
+New-spme-78,Holidays/Celebration/Leisure,Spanish (Mexico),¿Cómo se llama la canción que típicamente se canta en las fiestas de cumpleaños en México?,What is the name of the song that is typically sung at birthday parties in Mexico?
+New-su-01,Food,Sundanese (West Java),¿Qué bocadillos se venden usualmente frente a las escuelas en México?,What snacks are usually sold in front of schools in Mexico?
+New-su-09,Food,Sundanese (West Java),¿Qué aceite se utiliza habitualmente para cocinar en México?,What oil is usually used for cooking in Mexico?
+New-su-10,Food,Sundanese (West Java),¿Qué alimentos son comúnmente consumidos por mujeres embarazadas en México?,What food is commonly consumed by pregnant women in Mexico?
+New-su-15,Food,Sundanese (West Java),¿Cuál es la bebida tradicional sin alcohol más popular en México?,What is the most popular traditional non-alcoholic drink in Mexico?
+New-su-17,Sport,Sundanese (West Java),¿Qué instalaciones deportivas están generalmente disponibles en los parques en México?,What sports facilities are generally available in parks in Mexico?
+New-su-21,Sport,Sundanese (West Java),¿Cuáles son las actividades comunes que los adultos mayores suelen hacer en los parques en México?,What are the common activities that seniors usually do in parks in Mexico?
+New-su-24,Sport,Sundanese (West Java),¿Qué deportes suelen jugar juntos los padres y los hijos en México?,What sports do parents and children commonly play together in Mexico?
+New-su-28,Sport,Sundanese (West Java),¿Qué color se asocia con la selección nacional de fútbol de México?,What color is associated with the national soccer team of Mexico?
+New-su-33,Education,Sundanese (West Java),¿Cuál es el código de vestimenta común para los maestros de escuela en México?,What is the common dress code for school teachers in Mexico?
+New-su-34,Education,Sundanese (West Java),¿Cuál es la actividad extracurricular relacionada con la música más popular en las escuelas de México?,What is the most popular extracurricular activity related to music in schools in Mexico?
+New-su-42,Education,Sundanese (West Java),¿Qué religión se enseña principalmente en las escuelas de México?,What religion is mainly taught in schools in Mexico?
+New-su-45,Education,Sundanese (West Java),"¿En qué fecha se celebra el Día de la Educación en México? (Proporcione en formato MM/DD (por ejemplo, 12/31).)","What date is Education Day celebrated in Mexico? (Provide in MM/DD format (e.g., 12/31).)"
+New-su-50,Work life,Sundanese (West Java),¿Cuál es la principal ocupación de la gente en las zonas montañosas de México?,What is the main occupation of people in mountainous areas in Mexico?
+New-su-51,Work life,Sundanese (West Java),¿Cuál es la principal ocupación de las personas en las zonas costeras de México?,What is the main occupation of people in coastal areas in Mexico?
+New-su-57,Work life,Sundanese (West Java),¿Cuál es el ganado más comúnmente criado en México?,What is the most common livestock raised in Mexico?
+New-su-58,Work life,Sundanese (West Java),¿Qué animales se utilizan comúnmente para la agricultura en México?,What animals are commonly used for agriculture in Mexico?
+New-su-59,Work life,Sundanese (West Java),¿Qué suelen usar los agricultores en México para protegerse del calor mientras trabajan en el campo?,What do farmers in Mexico typically wear to protect themselves from the heat whilst farming?
+New-su-60,Work life,Sundanese (West Java),¿Qué suelen comer los agricultores en México para el almuerzo?,What do farmers in Mexico usually eat for lunch?
+New-su-71,Family,Sundanese (West Java),¿Qué regalos suelen dar los padres a sus hijos para sus cumpleaños en México?,What gifts do parents generally give to their children for their birthdays in Mexico?
+New-su-75,Family,Sundanese (West Java),¿Qué vehículos poseen generalmente la mayoría de las familias en México?,What type of vehicle do most families in Mexico generally own?
+New-su-77,Holidays/Celebration/Leisure,Sundanese (West Java),¿Qué se les suele dar a los niños durante el Eid en México?,What is usually given to the children during Eid in Mexico?
+New-su-81,Holidays/Celebration/Leisure,Sundanese (West Java),¿Qué ropa suelen llevar los novios en las bodas en México?,What clothes do grooms usually wear at weddings in Mexico?
+New-su-82,Holidays/Celebration/Leisure,Sundanese (West Java),¿Qué ropa suelen llevar las novias en las bodas en México?,What clothes do brides usually wear at weddings in Mexico?
+New-su-83,Holidays/Celebration/Leisure,Sundanese (West Java),¿Qué comida se sirve habitualmente en las bodas en México?,What food is usually served at weddings in Mexico?
+New-su-86,Holidays/Celebration/Leisure,Sundanese (West Java),¿Cuál es el edificio gubernamental más famoso de México?,What is the most famous government building in Mexico?
+New-su-88,Holidays/Celebration/Leisure,Sundanese (West Java),¿Cuál es el género musical más popular entre la población joven en México?,What is the most popular music genre among the younger population in Mexico?
+Ni-en-02,Education,English (UK),"¿A qué hora suelen salir los estudiantes de secundaria en México cada día? (Proporcionar en formato HH:MM, por ejemplo, 18:00, 09:00).","What time do middle school students in Mexico typically finish school each day? (Provide in HH:MM format (e.g., 18:00, 09:00).)"
+Ni-en-03,Education,English (UK),"¿A qué edad suelen las personas en México ir a la universidad? (Proporciona solo números arábigos, por ejemplo, 12.)","At what age do people in Mexico typically go to university? (Provide Arabic numerals (e.g., 12) only.)"
+Ni-en-06,Education,English (UK),"¿A partir de qué edad las personas deben asistir a la educación obligatoria en México? (Proporciona solo números arábigos, por ejemplo, 12.)","From what age do people need to attend compulsory education in Mexico? (Provide Arabic numerals (e.g., 12) only.)"
+Ni-en-09,Education,English (UK),¿Cuántos días a la semana asisten los niños a la escuela en México? (Proporcione únicamente números arábigos (0~7).),How many days a week do children attend school in Mexico? (Provide Arabic numerals (0~7) only.)
+Ni-en-11,Education,English (UK),"¿Cuánto tiempo (en años) se tarda típicamente en completar una Maestría en México? (Proporciona solo números arábigos, por ejemplo, 2).","In Mexico, how long (in years) does a Master's degree typically take to complete? (Provide Arabic numerals (e.g., 12) only.)"
+Ni-en-12,Education,English (UK),¿Cuál es la universidad más prestigiosa de México? (Proporciona el nombre oficial.),What is the top university in Mexico? (Provide the official name.)
+Ni-en-13,Education,English (UK),"¿A qué edad se gradúa la mayoría de las personas en México de la universidad? (Proporciona solo números arábigos, por ejemplo, 12.)","At what age do most people in Mexico graduate from university? (Provide Arabic numerals (e.g., 12) only.)"
+Ni-en-15,Education,English (UK),"¿A qué edad suelen los niños en México comenzar la secundaria? (Proporcione solo números arábigos, por ejemplo, 12.)","At what age do children in Mexico generally start middle school? (Provide Arabic numerals (e.g., 12) only.)"
+Ni-en-17,Work life,English (UK),"¿Cuántas horas a la semana trabaja típicamente un trabajador de tiempo completo en México? (Proporcione solo números arábigos (por ejemplo, 12).)","How many hours a week does a full-time worker in Mexico typically work? (Provide Arabic numerals (e.g., 12) only.)"
+Ni-en-19,Work life,English (UK),¿Cuántos días a la semana trabaja un trabajador de tiempo completo en México? (Proporcione solo números arábigos (0~7).),How many days a week does a full-time worker work in Mexico? (Provide Arabic numerals (0~7) only.)
+Ni-en-20,Work life,English (UK),"¿A qué edad comienza a trabajar la mayoría de las personas en México? (Proporcione solo números arábigos (por ejemplo, 12).)","At what age do most people start working in Mexico? (Provide Arabic numerals (e.g., 12) only.)"
+Ni-en-21,Work life,English (UK),"¿A partir de qué edad se permite trabajar a un individuo en México? (Proporcione únicamente números arábigos (por ejemplo, 12).)","From what age is an individual allowed to work in Mexico? (Provide Arabic numerals (e.g., 12) only.)"
+Ni-en-31,Holidays/Celebration/Leisure,English (UK),¿Qué comen tradicionalmente las personas en México el Día de Navidad?,What do people in Mexico traditionally eat on Christmas Day?
+Ni-en-37,Holidays/Celebration/Leisure,English (UK),¿Cómo se llama el día del año en que la gente en México celebra el amor y el romance?,What is the name of the day of the year where people in Mexico celebrate love and romance?
+Ni-en-40,Holidays/Celebration/Leisure,English (UK),¿Cuál es la canción de Navidad más popular en México?,What is the most popular Christmas song in Mexico?
+Nu-in-04,Education,Indonesian (Indonesia),"¿Cuántos semestres hay en cada año académico en las preparatorias de México? (Proporcionar solo en números arábigos (por ejemplo, 7, 8).)","How many semesters are there each academic year at high schools in Mexico? (Provide in Arabic numerals (e.g., 7, 8) only.)"
+Nu-in-05,Education,Indonesian (Indonesia),¿En qué mes suele comenzar el nuevo año escolar en México? (Proporcione solo números arábigos (1~12).),In which month does the new school year typically begin in Mexico? (Provide Arabic numerals (1~12) only.)
+Nu-in-06,Education,Indonesian (Indonesia),"¿Cuándo se conmemora el Día Nacional del Maestro en México? (Proporcionar en formato MM/DD (por ejemplo, 12/31).)","When is National Teacher's Day commemorated in Mexico? (Provide in MM/DD format (e.g., 12/31).)"
+Nu-in-11,Education,Indonesian (Indonesia),"¿A qué hora comienza la escuela primaria en México? (Proporcionar en formato HH:MM (por ejemplo, 18:00, 09:00).)","At what time does elementary school start in Mexico? (Provide in HH:MM format (e.g., 18:00, 09:00).)"
+Nu-in-20,Family,Indonesian (Indonesia),"¿Cuándo se celebra el Día del Niño en México? (Proporcionar en formato MM/DD (por ejemplo, 12/31).)","When is Children's Day celebrated in Mexico? (Provide in MM/DD format (e.g., 12/31).)"
+Nu-in-40,Work life,Indonesian (Indonesia),¿Cuál ciudad es el principal destino para los buscadores de empleo en México?,Which city is the main destination for job seekers in Mexico?
+Sa-en-1,Food,English (UK),¿Cuál es la cadena de comida rápida más popular de México?,What is Mexico's most popular fast food chain?
+Sa-en-13,Food,English (UK),¿Cuál es la comida que más divide (o se ama o se odia) en México?,What is the food that is most divisive (either love or hate) in Mexico?
+Sa-en-16,Sport,English (UK),¿Cuál es el equipo de fútbol más popular entre la gente de México?,What is the most popular soccer team among the people from Mexico?
+Sa-en-22,Sport,English (UK),¿Cuál es la universidad más famosa de México conocida por su equipo deportivo?,What is the most famous university in Mexico known for its sports team?
+Sa-en-31,Family,English (UK),¿Cuál es la mascota familiar más popular de México?,What is Mexico's most popular family pet?
+Sa-en-32,Family,English (UK),¿Cuál es el programa de televisión familiar más popular en México?,What is the most popular family TV show in Mexico?
+Sa-en-37,Family,English (UK),¿Cuál es el juego de mesa familiar más popular en México?,What is the most popular family boardgame in Mexico?
+Sa-en-6,Food,English (UK),¿Cuál es la comida para llevar más popular en México?,What is the most popular takeaway food in Mexico?
+Sa-en-7,Food,English (UK),¿Cuáles son los antojitos populares en México?,What are popular snacks in Mexico?
+Sa-en-9,Food,English (UK),¿Qué comen las personas de México en la playa?,What do people from Mexico eat at the beach?
+Ta-pe-10,Family,Persian (Iran),"¿A qué edad suelen casarse los hombres en México? (Proporcione solo números arábigos (por ejemplo, 20).)","At what age do men usually get married in Mexico? (Provide Arabic numerals (e.g., 20) only.)"
+Ta-pe-11,Family,Persian (Iran),"¿A qué edad suelen casarse las mujeres en México? (Proporcione solo números arábigos, por ejemplo, 20.)","At what age do women usually get married in Mexico? (Provide Arabic numerals (e.g., 20) only.)"
+Ta-pe-13,Family,Persian (Iran),"En la generación de tus padres, ¿cuál era el número promedio de miembros en sus familias en México? (Proporciona únicamente números arábigos, por ejemplo, 20.)","In your parents' generation, what was the average number of members in their family in Mexico? (Provide Arabic numerals (e.g., 20) only.)"
+Ta-pe-17,Sport,Persian (Iran),"En los Juegos Olímpicos, ¿cuál es el deporte más popular en México?","In the Olympic Games, which sport is the most popular in Mexico?"
+Ta-pe-21,Sport,Persian (Iran),¿Dónde suelen jugar fútbol los niños en México?,Where do children usually play soccer in Mexico?
+Ta-pe-22,Sport,Persian (Iran),¿Qué ejercicio diario es popular entre las mujeres en México?,Which daily exercise is popular among women in Mexico?
+Ta-pe-23,Sport,Persian (Iran),¿Qué ejercicio diario es popular entre los hombres en México?,Which daily exercise is popular among men in Mexico?
+Ta-pe-25,Sport,Persian (Iran),"¿Cuál es la rivalidad más famosa en una liga deportiva nacional en México? (por ejemplo, ___ vs ___)","What is the most famous rivalry in a national sports league in Mexico? (e.g., ___ vs ___)"
+Ta-pe-29,Sport,Persian (Iran),¿Cuál es el deporte profesional mejor pagado en México?,Which professional sport is the highest paying in Mexico?
+Ta-pe-30,Sport,Persian (Iran),¿Cuál es/fue el programa de televisión relacionado con deportes más popular en México?,What is/was the most popular sports-related TV program in Mexico?
+Ta-pe-32,Holidays/Celebration/Leisure,Persian (Iran),¿Qué día del año se dedica usualmente a los fuegos artificiales en México?,What day of the year is usually dedicated to fireworks in Mexico?
+Ta-pe-37,Holidays/Celebration/Leisure,Persian (Iran),¿Cuál es el símbolo común de la Nochevieja que usualmente se encuentra en México?,What is the common symbol of New Year's Eve that is usually found in Mexico?
+Ta-pe-42,Holidays/Celebration/Leisure,Persian (Iran),¿Qué comida suelen comer las personas de México en la víspera de Año Nuevo?,What food do people from Mexico usually eat on New Year's Eve?
+Ta-pe-45,Holidays/Celebration/Leisure,Persian (Iran),¿Qué se suele comer durante la celebración de la noche más larga del año en México?,What is usually eaten during the celebration of the longest night of the year in Mexico?
+Th-en-01,Sport,English (US),¿Cuál es el deporte de verano más popular en México?,What is the most popular summer sport in Mexico?
+Th-en-03,Sport,English (US),¿Cuál es la liga profesional de deportes más popular en México?,What is the most popular professional sports league in Mexico?
+Th-en-05,Sport,English (US),¿Cuál es el equipo deportivo femenino más popular en México?,What is the most popular women's sports team in Mexico?
+Th-en-09,Sport,English (US),¿Cuál es el torneo más popular en México?,What is the most popular tournament in Mexico?
+Th-en-11,Sport,English (US),¿Quién es el deportista más popular en México?,Who is the most popular sportperson in Mexico?
+Th-en-12,Sport,English (US),¿En qué deporte ha tenido México más éxito en competiciones internacionales?,In which sport has Mexico been most successful in international competitions?
+Th-en-15,Sport,English (US),¿Cuál es el deporte de invierno más popular en México?,What is the most popular winter sport in Mexico?
+Th-en-19,Work life,English (US),¿Cuál es una ciudad o región en México conocida por la industria manufacturera?,What is a city or region in Mexico known for manufacturing industry?
+Th-en-21,Work life,English (US),¿Cuál se considera el beneficio más importante que se ofrece típicamente a los empleados en México?,What is regarded as the most important perk typically offered to employees in Mexico?
+Th-en-22,Work life,English (US),¿Cuál fue el período económico más catastrófico para México?,What was the most catastrophic economic period for Mexico?
+Th-en-24,Work life,English (US),¿Qué región de México es un centro principal para trabajadores de tecnología y startups?,What region in Mexico is a major hub for tech workers and start ups?
+Th-en-27,Work life,English (US),¿Cuál es la industria más importante en México?,What is the most important industry in Mexico?
+Th-en-35,Family,English (US),"¿Cuál de las comidas diarias se comparte comúnmente con los miembros de la familia en México? (por ejemplo, desayuno, comida, cena)","Which one of the daily meals is commonly shared with family members in Mexico? (e.g., breakfast, lunch, dinner)"
+Th-en-36,Family,English (US),¿Cuál es una actividad familiar popular para hacer con un niño los fines de semana en México?,What is a popular family activity with a child to do on weekends in Mexico?
+Th-en-37,Family,English (US),"¿A qué edad suelen los niños volverse independientes de sus padres en México? (Proporcione solo números arábigos (por ejemplo, 12).)","At what age do children typically become independent from their parents in Mexico? (Provide Arabic numerals (e.g., 12) only.)"
+Th-en-38,Family,English (US),¿Cuál es la festividad familiar más importante en México?,What is the most important family holiday in Mexico?
+Th-en-39,Family,English (US),¿Cuál es un juego familiar popular en México?,What is a popular family game in Mexico?
+Th-en-41,Family,English (US),"¿Cuál es la edad promedio para que las parejas tengan su primer hijo en México? (Proporcione solo números arábigos (por ejemplo, 20).)","What is the average age for couples to have their first child in Mexico? (Provide Arabic numerals (e.g., 20) only.)"
+Th-en-43,Family,English (US),"¿Cuántos autos posee una familia típica en México? (Proporcione solo números arábigos, por ejemplo, 12.)","How many cars are owned by a typical family in Mexico? (Provide Arabic numerals (e.g., 12) only.)"
+Th-en-44,Family,English (US),¿Cuál es la comida más popular en México para las comidas familiares de los fines de semana?,What is Mexico's most popular food for family meals on weekends?
+Th-en-45,Family,English (US),¿Cuál es la actividad familiar más popular durante las noches entre semana en México?,What is the most popular weekday evening family activity in Mexico?
+Th-en-48,Education,English (US),¿Cuál es la calificación más alta que se les da a los estudiantes de preparatoria con mejores resultados en tareas y exámenes en México?,What is the highest grade given to top-achieving high school students on assignments and exams in Mexico?
+Th-en-49,Education,English (US),¿Cuál es considerado el examen más importante para los estudiantes de preparatoria en México?,What is considered the most important exam for high school students in Mexico?
+Th-en-51,Education,English (US),¿Qué materia se considera la más importante para los estudiantes en México?,Which subject is considered the most important for students in Mexico?
+Th-en-53,Education,English (US),¿Cuál es el evento social extracurricular más popular en las escuelas de México?,What is the most popular extracurricular social event at schools in Mexico?
+Th-en-58,Education,English (US),¿Cuál es la materia de matemáticas más avanzada que se aprende antes de la universidad en México?,What is the most advanced math subject learned before university in Mexico?
+Tmp-ar-01,Education,Arabic (Algeria),¿A dónde suelen ir los estudiantes universitarios en México para estudiar para sus examenes finales?,Where do university students in Mexico usually go to study for their final exams?
+Tmp-ar-02,Education,Arabic (Algeria),¿Cuál es un transporte público común que la gente utiliza para ir a la universidad en México?,What is a common public transport that people use to go to university in Mexico?
+Tmp-ar-04,Education,Arabic (Algeria),¿Qué suelen hacer los estudiantes de primaria en México después de la escuela?,What do elementary students in Mexico usually do after school?

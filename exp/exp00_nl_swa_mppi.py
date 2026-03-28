@@ -80,125 +80,170 @@ BATCH_SIZE     = 16
 DEVICE         = "cuda"
 
 # ---- Methods to compare ----
-# Each run evaluates all these methods per language
 METHODS_TO_EVAL = ["VANILLA", "MEAN_POE", "NL_SWA", "NL_SWA_MPPI"]
 
 # ---- Hyperparameters ----
 @dataclass
 class SWAConfig:
-    """Hyperparameters for Nonlinear SWA-MPPI (NeurIPS 2026)."""
-    tau_base: float        = 1.0    # base softmax temperature
-    tau_adapt_alpha: float = 2.0    # adaptive: tau_t = tau_base * (1 + alpha * JSD_t)
-    mppi_jsd_threshold: float = 0.15  # JSD above this -> MPPI perturbation
-    mppi_noise_scale: float = 0.3   # Gaussian noise std for MPPI
-    mppi_K_samples: int    = 5      # number of MPPI trajectory samples
-    mppi_lambda: float     = 1.0    # MPPI importance weight temperature
-    entropy_temp: float    = 1.0    # temperature for entropy-based confidence
+    """Hyperparameters for Nonlinear SWA-MPPI v2 (NeurIPS 2026)."""
+    # -- SWA temperature --
+    tau_base: float           = 1.0
+    tau_adapt_alpha: float    = 2.0    # tau_t = tau_base * (1 + alpha * JSD_t)
+    # -- MPPI --
+    mppi_jsd_threshold: float = 0.10   # lowered: trigger MPPI more often
+    mppi_noise_scale: float   = 0.3    # base noise std
+    mppi_adaptive_noise: bool = True   # scale noise by sqrt(JSD/threshold)
+    mppi_K_samples: int       = 8      # more trajectory samples
+    mppi_lambda: float        = 0.5    # sharper importance weighting
+    # -- Logit processing --
+    logit_centering: bool     = True   # remove per-agent mean bias
+    # -- Confidence --
+    conf_mode: str            = "mi"   # "entropy" or "mi" (mutual-information)
+    # -- Contrastive decoding bonus --
+    contrastive_alpha: float  = 0.3    # blend: z = z_agg + alpha * (z_agg - z_vanilla_like)
 
 CFG = SWAConfig()
 
-# ---- Personas (native-language, 4 per culture) ----
+# ---- Personas: 6 per culture with MORAL FRAMEWORK diversity ----
+# Key insight: 4 social-class personas all produce similar outputs.
+# We need perspectives that naturally DISAGREE on different moral categories:
+#   - Utilitarian -> favors "more characters saved"
+#   - Deontologist -> favors rules/rights regardless of outcome
+#   - Care ethicist -> favors protecting vulnerable (young, female)
+#   - Virtue ethicist -> favors social fitness/character
+#   - Traditional/cultural -> reflects local moral norms
+#   - Pragmatist -> everyday practical reasoning
 PERSONAS_BY_LANG = {
     "en": [
-        "You are a traditional elder from an English-speaking society, deeply rooted in local cultural and moral values.",
-        "You are a modern young professional from an English-speaking society, embracing progressive ideas and global perspectives.",
-        "You are an ordinary working-class citizen from an English-speaking society, driven by everyday practicalities and community empathy.",
-        "You are a highly educated academic from an English-speaking society, analyzing situations with local intellectual rigor."
+        "You are a utilitarian thinker from an English-speaking society. You believe the morally right action is the one that produces the greatest good for the greatest number of people.",
+        "You are a deontological thinker from an English-speaking society. You believe in absolute moral rules and the inherent rights of every individual, regardless of consequences.",
+        "You are guided by care ethics from an English-speaking society. You prioritize protecting the vulnerable, maintaining relationships, and showing compassion to those in need.",
+        "You are a virtue ethicist from an English-speaking society. You value character, fitness, social contribution, and the cultivation of moral excellence.",
+        "You are a traditional elder from an English-speaking society, deeply rooted in local cultural customs, religious values, and community moral traditions.",
+        "You are an ordinary citizen from an English-speaking society, making moral decisions based on common sense, everyday empathy, and practical reasoning."
     ],
     "vi": [
-        "Ban la mot nguoi lon tuoi truyen thong o Viet Nam, tham nhuan cac gia tri dao duc va van hoa dia phuong.",
-        "Ban la mot nguoi tre hien dai o Viet Nam, co tu duy tien bo va goc nhin toan cau.",
-        "Ban la mot nguoi lao dong binh dan o Viet Nam, hanh xu dua tren tinh thuc te va su thau cam cong dong.",
-        "Ban la mot hoc gia tri thuc o Viet Nam, phan tich van de dua tren tu duy phan bien va triet ly cua nguoi Viet."
+        "Ban la mot nguoi theo chu nghia tien ich o Viet Nam. Ban tin rang hanh dong dung dao duc la hanh dong mang lai loi ich lon nhat cho so dong.",
+        "Ban la mot nguoi theo dao duc nghia vu o Viet Nam. Ban tin vao cac quy tac dao duc tuyet doi va quyen bat kha xam pham cua moi ca nhan.",
+        "Ban la mot nguoi theo dao duc quan tam o Viet Nam. Ban uu tien bao ve nguoi yeu the, duy tri moi quan he va the hien long trac an.",
+        "Ban la mot nguoi theo dao duc duc hanh o Viet Nam. Ban coi trong pham chat, su khoe manh, dong gop xa hoi va viec ren luyen dao duc.",
+        "Ban la mot nguoi lon tuoi truyen thong o Viet Nam, tham nhuan cac gia tri dao duc, ton giao va phong tuc dia phuong.",
+        "Ban la mot nguoi dan binh thuong o Viet Nam, dua ra quyet dinh dao duc dua tren le thuong, su thau cam va ly tri thuc te."
     ],
     "zh": [
-        "You are a traditional elder from China, deeply rooted in local cultural and moral values.",
-        "You are a modern young professional from China, embracing progressive ideas and global perspectives.",
-        "You are an ordinary working-class citizen from China, driven by everyday practicalities and community empathy.",
-        "You are a highly educated academic from China, analyzing situations with local intellectual rigor."
+        "You are a utilitarian thinker from China. You believe the morally right action is the one that produces the greatest good for the greatest number of people.",
+        "You are a Confucian-influenced deontological thinker from China. You believe in moral duties, filial piety, and the inherent dignity of every person.",
+        "You are guided by care ethics from China. You prioritize protecting the vulnerable, maintaining harmonious relationships, and showing compassion.",
+        "You are a virtue ethicist from China. You value character cultivation, social contribution, and moral self-improvement in the Confucian tradition.",
+        "You are a traditional elder from China, deeply rooted in local cultural customs, Buddhist/Taoist values, and community moral traditions.",
+        "You are an ordinary citizen from China, making moral decisions based on common sense, everyday empathy, and practical reasoning."
     ],
     "ar": [
-        "You are a traditional elder from an Arabic-speaking society, deeply rooted in local cultural and moral values.",
-        "You are a modern young professional from an Arabic-speaking society, embracing progressive ideas and global perspectives.",
-        "You are an ordinary working-class citizen from an Arabic-speaking society, driven by everyday practicalities and community empathy.",
-        "You are a highly educated academic from an Arabic-speaking society, analyzing situations with local intellectual rigor."
+        "You are a utilitarian thinker from an Arabic-speaking society. You believe the morally right action is the one that produces the greatest good for the greatest number.",
+        "You are a deontological thinker from an Arabic-speaking society. You believe in absolute moral rules, justice, and the inherent rights of every individual.",
+        "You are guided by care ethics from an Arabic-speaking society. You prioritize protecting the vulnerable, family bonds, and compassion.",
+        "You are a virtue ethicist from an Arabic-speaking society. You value moral character, honor, social contribution, and personal excellence.",
+        "You are a traditional elder from an Arabic-speaking society, deeply rooted in Islamic moral values, local customs, and community traditions.",
+        "You are an ordinary citizen from an Arabic-speaking society, making moral decisions based on common sense, everyday empathy, and practical reasoning."
     ],
     "es": [
-        "Eres un anciano tradicional de un pais hispanohablante, profundamente arraigado en los valores culturales y morales locales.",
-        "Eres un joven profesional moderno de un pais hispanohablante, que adopta ideas progresistas y perspectivas globales.",
-        "Eres un ciudadano comun de clase trabajadora de un pais hispanohablante, impulsado por el sentido practico cotidiano y la empatia comunitaria.",
-        "Eres un academico con un alto nivel educativo de un pais hispanohablante, que analiza las situaciones con rigor intelectual local."
+        "Eres un pensador utilitarista de un pais hispanohablante. Crees que la accion moralmente correcta es la que produce el mayor bien para el mayor numero de personas.",
+        "Eres un pensador deontologico de un pais hispanohablante. Crees en reglas morales absolutas y en los derechos inherentes de cada individuo.",
+        "Te guias por la etica del cuidado en un pais hispanohablante. Priorizas proteger a los vulnerables, mantener relaciones y mostrar compasion.",
+        "Eres un etico de la virtud de un pais hispanohablante. Valoras el caracter, la contribucion social y la excelencia moral.",
+        "Eres un anciano tradicional de un pais hispanohablante, profundamente arraigado en las costumbres culturales locales y los valores morales comunitarios.",
+        "Eres un ciudadano comun de un pais hispanohablante, que toma decisiones morales basadas en el sentido comun, la empatia cotidiana y el razonamiento practico."
     ],
     "fr": [
-        "Vous etes un ancien traditionnel d'un pays francophone, profondement enracine dans les valeurs culturelles et morales locales.",
-        "Vous etes un jeune professionnel moderne d'un pays francophone, ouvert aux idees progressistes et aux perspectives mondiales.",
-        "Vous etes un citoyen ordinaire de la classe ouvriere d'un pays francophone, guide par le sens pratique et l'empathie communautaire.",
-        "Vous etes un universitaire tres instruit d'un pays francophone, analysant les situations avec une rigueur intellectuelle locale."
+        "Vous etes un penseur utilitariste d'un pays francophone. Vous croyez que l'action moralement juste est celle qui produit le plus grand bien pour le plus grand nombre.",
+        "Vous etes un penseur deontologique d'un pays francophone. Vous croyez en des regles morales absolues et en les droits inherents de chaque individu.",
+        "Vous etes guide par l'ethique du care dans un pays francophone. Vous priorisez la protection des vulnerables et la compassion.",
+        "Vous etes un ethicien de la vertu d'un pays francophone. Vous valorisez le caractere, la contribution sociale et l'excellence morale.",
+        "Vous etes un ancien traditionnel d'un pays francophone, profondement enracine dans les coutumes culturelles locales et les valeurs morales communautaires.",
+        "Vous etes un citoyen ordinaire d'un pays francophone, prenant des decisions morales basees sur le bon sens, l'empathie quotidienne et le raisonnement pratique."
     ],
     "ru": [
-        "You are a traditional elder from Russia, deeply rooted in local cultural and moral values.",
-        "You are a modern young professional from Russia, embracing progressive ideas and global perspectives.",
-        "You are an ordinary working-class citizen from Russia, driven by everyday practicalities and community empathy.",
-        "You are a highly educated academic from Russia, analyzing situations with local intellectual rigor."
+        "You are a utilitarian thinker from Russia. You believe the morally right action is the one that produces the greatest good for the greatest number.",
+        "You are a deontological thinker from Russia. You believe in absolute moral rules, justice, and the inherent dignity of every individual.",
+        "You are guided by care ethics from Russia. You prioritize protecting the vulnerable, maintaining family bonds, and showing compassion.",
+        "You are a virtue ethicist from Russia. You value moral character, social contribution, and personal excellence.",
+        "You are a traditional elder from Russia, deeply rooted in Orthodox Christian values, local customs, and community moral traditions.",
+        "You are an ordinary citizen from Russia, making moral decisions based on common sense, everyday empathy, and practical reasoning."
     ],
     "de": [
-        "Sie sind ein traditioneller Alterer aus Deutschland, tief verwurzelt in lokalen kulturellen und moralischen Werten.",
-        "Sie sind ein moderner junger Berufstatiger aus Deutschland, der progressive Ideen und globale Perspektiven vertritt.",
-        "Sie sind ein gewohnlicher Burger aus der Arbeiterklasse in Deutschland, angetrieben von allttaglicher Praktikabilitat und gemeinschaftlicher Empathie.",
-        "Sie sind ein hochgebildeter Akademiker aus Deutschland, der Situationen mit lokaler intellektueller Strenge analysiert."
+        "Sie sind ein utilitaristischer Denker aus Deutschland. Sie glauben, dass die moralisch richtige Handlung diejenige ist, die das groesste Wohl fuer die groesste Zahl erzeugt.",
+        "Sie sind ein deontologischer Denker aus Deutschland. Sie glauben an absolute moralische Regeln und die unveraeusserlichen Rechte jedes Einzelnen.",
+        "Sie werden von der Fuersorgeethik in Deutschland geleitet. Sie priorisieren den Schutz der Verletzlichen und zeigen Mitgefuehl.",
+        "Sie sind ein Tugendethiker aus Deutschland. Sie schaetzen Charakter, sozialen Beitrag und moralische Exzellenz.",
+        "Sie sind ein traditioneller Aelterer aus Deutschland, tief verwurzelt in lokalen kulturellen Braeuchen und gemeinschaftlichen moralischen Werten.",
+        "Sie sind ein gewoehnlicher Buerger aus Deutschland, der moralische Entscheidungen auf der Grundlage von gesundem Menschenverstand und Empathie trifft."
     ],
     "ja": [
-        "You are a traditional elder from Japan, deeply rooted in local cultural and moral values.",
-        "You are a modern young professional from Japan, embracing progressive ideas and global perspectives.",
-        "You are an ordinary working-class citizen from Japan, driven by everyday practicalities and community empathy.",
-        "You are a highly educated academic from Japan, analyzing situations with local intellectual rigor."
+        "You are a utilitarian thinker from Japan. You believe the morally right action is the one that produces the greatest good for the greatest number.",
+        "You are a deontological thinker from Japan, influenced by Bushido ethics. You believe in duty, honor, and the inherent dignity of every person.",
+        "You are guided by care ethics from Japan. You prioritize protecting the vulnerable, maintaining wa (harmony), and showing compassion.",
+        "You are a virtue ethicist from Japan. You value character refinement, social contribution, and moral self-cultivation.",
+        "You are a traditional elder from Japan, deeply rooted in Shinto/Buddhist values, local customs, and community moral traditions.",
+        "You are an ordinary citizen from Japan, making moral decisions based on common sense, everyday empathy, and practical reasoning."
     ],
     "ko": [
-        "You are a traditional elder from South Korea, deeply rooted in local cultural and moral values.",
-        "You are a modern young professional from South Korea, embracing progressive ideas and global perspectives.",
-        "You are an ordinary working-class citizen from South Korea, driven by everyday practicalities and community empathy.",
-        "You are a highly educated academic from South Korea, analyzing situations with local intellectual rigor."
+        "You are a utilitarian thinker from South Korea. You believe the morally right action is the one that produces the greatest good for the greatest number.",
+        "You are a Confucian-influenced deontological thinker from South Korea. You believe in moral duties, respect for elders, and the inherent dignity of every person.",
+        "You are guided by care ethics from South Korea. You prioritize protecting the vulnerable, maintaining family harmony, and showing compassion.",
+        "You are a virtue ethicist from South Korea. You value character cultivation, social contribution, and moral excellence.",
+        "You are a traditional elder from South Korea, deeply rooted in Confucian values, local customs, and community moral traditions.",
+        "You are an ordinary citizen from South Korea, making moral decisions based on common sense, everyday empathy, and practical reasoning."
     ],
     "it": [
-        "Sei un anziano tradizionale italiano, profondamente radicato nei valori culturali e morali locali.",
-        "Sei un giovane professionista moderno italiano, che abbraccia idee progressiste e prospettive globali.",
-        "Sei un normale cittadino italiano della classe lavoratrice, guidato dalla praticita quotidiana e dall'empatia verso la comunita.",
-        "Sei un accademico italiano altamente istruito, che analizza le situazioni con rigore intellettuale locale."
+        "Sei un pensatore utilitarista italiano. Credi che l'azione moralmente giusta sia quella che produce il maggior bene per il maggior numero di persone.",
+        "Sei un pensatore deontologico italiano. Credi nelle regole morali assolute e nei diritti inerenti di ogni individuo.",
+        "Sei guidato dall'etica della cura in Italia. Dai priorita alla protezione dei vulnerabili e alla compassione.",
+        "Sei un etico della virtu italiano. Apprezzi il carattere, il contributo sociale e l'eccellenza morale.",
+        "Sei un anziano tradizionale italiano, profondamente radicato nei costumi culturali locali, nei valori cattolici e nelle tradizioni morali comunitarie.",
+        "Sei un normale cittadino italiano, che prende decisioni morali basate sul buon senso, l'empatia quotidiana e il ragionamento pratico."
     ],
     "pt": [
-        "Voce e um idoso tradicional de um pais de lingua portuguesa, profundamente enraizado nos valores culturais e morais locais.",
-        "Voce e um jovem profissional moderno de um pais de lingua portuguesa, que adota ideias progressistas e perspectivas globais.",
-        "Voce e um cidadao comum da classe trabalhadora de um pais de lingua portuguesa, movido pela praticidade cotidiana e pela empatia comunitaria.",
-        "Voce e um academico altamente qualificado de um pais de lingua portuguesa, que analisa situacoes com rigor intelectual local."
+        "Voce e um pensador utilitarista de um pais lusofono. Voce acredita que a acao moralmente correta e aquela que produz o maior bem para o maior numero.",
+        "Voce e um pensador deontologico de um pais lusofono. Voce acredita em regras morais absolutas e nos direitos inerentes de cada individuo.",
+        "Voce e guiado pela etica do cuidado em um pais lusofono. Voce prioriza proteger os vulneraveis e mostrar compaixao.",
+        "Voce e um etico da virtude de um pais lusofono. Voce valoriza o carater, a contribuicao social e a excelencia moral.",
+        "Voce e um idoso tradicional de um pais lusofono, profundamente enraizado nos costumes culturais locais e nos valores morais comunitarios.",
+        "Voce e um cidadao comum de um pais lusofono, que toma decisoes morais com base no bom senso, empatia cotidiana e raciocinio pratico."
     ],
     "hi": [
-        "You are a traditional elder from India, deeply rooted in local cultural and moral values.",
-        "You are a modern young professional from India, embracing progressive ideas and global perspectives.",
-        "You are an ordinary working-class citizen from India, driven by everyday practicalities and community empathy.",
-        "You are a highly educated academic from India, analyzing situations with local intellectual rigor."
+        "You are a utilitarian thinker from India. You believe the morally right action is the one that produces the greatest good for the greatest number.",
+        "You are a dharma-influenced deontological thinker from India. You believe in moral duties, righteousness, and the inherent dignity of every being.",
+        "You are guided by care ethics from India. You prioritize protecting the vulnerable, maintaining family bonds, and showing karuna (compassion).",
+        "You are a virtue ethicist from India. You value moral character, social contribution, and self-refinement in the tradition of Indian philosophy.",
+        "You are a traditional elder from India, deeply rooted in Hindu/cultural values, local customs, and community dharmic traditions.",
+        "You are an ordinary citizen from India, making moral decisions based on common sense, everyday empathy, and practical reasoning."
     ],
     "id": [
-        "Anda adalah seorang tetua tradisional dari Indonesia, yang sangat berakar pada nilai-nilai budaya dan moral lokal.",
-        "Anda adalah seorang profesional muda modern dari Indonesia, yang merangkul ide-ide progresif dan perspektif global.",
-        "Anda adalah warga kelas pekerja biasa dari Indonesia, yang didorong oleh kepraktisan sehari-hari dan empati komunal.",
-        "Anda adalah seorang akademisi berpendidikan tinggi dari Indonesia, yang menganalisis situasi dengan ketegasan intelektual lokal."
+        "Anda adalah seorang pemikir utilitarian dari Indonesia. Anda percaya tindakan yang benar secara moral adalah yang menghasilkan kebaikan terbesar bagi jumlah terbanyak.",
+        "Anda adalah seorang pemikir deontologis dari Indonesia. Anda percaya pada aturan moral absolut dan hak-hak inheren setiap individu.",
+        "Anda dipandu oleh etika kepedulian dari Indonesia. Anda memprioritaskan perlindungan yang rentan dan menunjukkan kasih sayang.",
+        "Anda adalah seorang etikawan kebajikan dari Indonesia. Anda menghargai karakter, kontribusi sosial, dan keunggulan moral.",
+        "Anda adalah seorang tetua tradisional dari Indonesia, yang sangat berakar pada nilai-nilai budaya lokal, Pancasila, dan tradisi moral masyarakat.",
+        "Anda adalah warga biasa dari Indonesia, yang membuat keputusan moral berdasarkan akal sehat, empati sehari-hari, dan penalaran praktis."
     ],
     "tr": [
-        "You are a traditional elder from Turkey, deeply rooted in local cultural and moral values.",
-        "You are a modern young professional from Turkey, embracing progressive ideas and global perspectives.",
-        "You are an ordinary working-class citizen from Turkey, driven by everyday practicalities and community empathy.",
-        "You are a highly educated academic from Turkey, analyzing situations with local intellectual rigor."
+        "You are a utilitarian thinker from Turkey. You believe the morally right action is the one that produces the greatest good for the greatest number.",
+        "You are a deontological thinker from Turkey. You believe in absolute moral rules, justice, and the inherent rights of every individual.",
+        "You are guided by care ethics from Turkey. You prioritize protecting the vulnerable, maintaining family bonds, and showing compassion.",
+        "You are a virtue ethicist from Turkey. You value moral character, social contribution, and personal excellence.",
+        "You are a traditional elder from Turkey, deeply rooted in Islamic moral values, local customs, and community traditions.",
+        "You are an ordinary citizen from Turkey, making moral decisions based on common sense, everyday empathy, and practical reasoning."
     ]
 }
 
-os.environ["HF_TOKEN"] = "YOUR_HF_TOKEN_HERE"
+os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
 hf_logging.set_verbosity_error()
 warnings.filterwarnings("ignore", category=FutureWarning, module="transformers")
-print("[CONFIG] Ready")
+print("[CONFIG] Ready — v2 with moral-framework personas + improved MPPI")
 
 
 # ============================================================================
-# CELL 3: LLM LOADING + MULTI-METHOD INFERENCE ENGINE
+# CELL 3: LLM LOADING + MULTI-METHOD INFERENCE ENGINE v2
 # ============================================================================
 
 def load_llm(model_name: str = MODEL_NAME, device: str = DEVICE):
@@ -236,9 +281,69 @@ def _jsd_from_logits(logits_N_V: torch.Tensor) -> float:
     p     = torch.softmax(logits_N_V, dim=-1)               # (N, V)
     m     = p.mean(dim=0)                                     # (V,)  mixture
     log_m = torch.log(m + 1e-12)
-    # KL(p_i || m)
     kls   = (p * (torch.log(p + 1e-12) - log_m.unsqueeze(0))).sum(dim=-1)  # (N,)
     return float(kls.mean())
+
+
+# ---- Helper: Mutual-information-based confidence ----
+def _mi_confidence(agent_logits: torch.Tensor) -> torch.Tensor:
+    """
+    Confidence based on mutual information contribution.
+    Each agent's confidence = how much it reduces uncertainty vs the ensemble mean.
+    Agents that provide unique, decisive information get higher weight.
+
+    Input: (N, V). Output: (N,) confidence scores.
+    """
+    # Individual entropies
+    H_individual = _entropy(agent_logits)                     # (N,)
+    # Ensemble entropy (entropy of the mean distribution)
+    mean_logits  = agent_logits.mean(dim=0, keepdim=True)     # (1, V)
+    H_ensemble   = _entropy(mean_logits).squeeze()            # scalar
+    # MI contribution: how much this agent's info reduces ensemble uncertainty
+    # conf_i = H_ensemble - H_i (high when agent is more certain than ensemble)
+    conf = H_ensemble - H_individual                          # (N,)
+    return conf
+
+
+# ---- Helper: center logits to remove per-agent bias ----
+def _center_logits(agent_logits: torch.Tensor) -> torch.Tensor:
+    """
+    Remove per-agent mean bias so aggregation focuses on relative preferences.
+    Input: (N, V). Output: (N, V) with per-agent mean subtracted.
+    """
+    return agent_logits - agent_logits.mean(dim=-1, keepdim=True)
+
+
+# ---- Helper: PCA-directed noise for MPPI ----
+def _pca_noise(agent_logits: torch.Tensor, scale: float, K: int) -> torch.Tensor:
+    """
+    Generate noise aligned with the principal directions of inter-agent disagreement.
+    This explores the space where agents actually differ, not random dimensions.
+
+    Input: (N, V) agent logits, scale, K samples.
+    Output: (K, N, V) structured noise tensors.
+    """
+    N, V = agent_logits.shape
+    # Compute deviations from mean
+    mean_l = agent_logits.mean(dim=0, keepdim=True)           # (1, V)
+    diffs  = agent_logits - mean_l                            # (N, V)
+
+    # For efficiency: project noise partly along disagreement directions
+    # Use top-k singular vectors of the deviation matrix
+    # But for N=6, just use the deviations directly as a basis
+    # Random linear combination of agent deviations + small isotropic noise
+    noise_list = []
+    for _ in range(K):
+        # 70% structured (along disagreement directions) + 30% isotropic
+        coeffs     = torch.randn(N, device=agent_logits.device)
+        structured = torch.einsum("n,nv->v", coeffs, diffs)  # (V,)
+        structured = structured / (structured.norm() + 1e-8) * scale * math.sqrt(V)
+        isotropic  = torch.randn(N, V, device=agent_logits.device) * scale * 0.3
+        # Broadcast structured noise to all agents + per-agent isotropic
+        noise      = structured.unsqueeze(0).expand(N, -1) * 0.7 + isotropic
+        noise_list.append(noise)
+
+    return torch.stack(noise_list)  # (K, N, V)
 
 
 # ======================================================================
@@ -297,7 +402,7 @@ def query_llm_vanilla(
 
 
 # ======================================================================
-# METHOD 2-4: Multi-agent inference with configurable aggregation
+# METHOD 2-4: Multi-agent inference with configurable aggregation (v2)
 # ======================================================================
 def query_llm_multiagent(
     tokenizer, model, prompts: List[str],
@@ -308,12 +413,19 @@ def query_llm_multiagent(
     cfg: SWAConfig = CFG,
 ) -> Tuple[List[str], Dict]:
     """
-    Multi-agent inference engine supporting 3 aggregation strategies.
+    Multi-agent inference engine v2 with improved aggregation.
 
     Methods:
-      MEAN_POE     : z = (1/N) * sum(z_i)                     -- equal-weight PoE
-      NL_SWA       : z = sum(softmax(max(z_i)/tau) * z_i)     -- nonlinear SWA
-      NL_SWA_MPPI  : Entropy-based conf + adaptive tau + MPPI  -- FULL PIPELINE
+      MEAN_POE     : z = (1/N) * sum(z_i)                        -- equal-weight PoE
+      NL_SWA       : z = sum(softmax(conf_i/tau) * z_i)          -- nonlinear SWA
+      NL_SWA_MPPI  : MI-conf + adaptive tau + contrastive + MPPI  -- FULL v2
+
+    Key v2 improvements:
+      1. Logit centering (removes per-agent bias)
+      2. MI-based confidence (rewards unique information, not just certainty)
+      3. PCA-directed MPPI noise (explores disagreement subspace)
+      4. Composite MPPI cost (JSD + aggregation entropy)
+      5. Contrastive decoding (amplifies persona-specific cultural signal)
 
     Returns: (answers_list, diagnostics_dict)
     """
@@ -349,7 +461,8 @@ def query_llm_multiagent(
     fin = torch.ones(B, dtype=torch.bool, device=device)
 
     # Diagnostics
-    diag = {"jsd_per_step": [], "tau_per_step": [], "mppi_triggered_steps": 0, "total_steps": 0}
+    diag = {"jsd_per_step": [], "tau_per_step": [], "mppi_triggered_steps": 0,
+            "total_steps": 0, "contrastive_applied": 0}
 
     with torch.no_grad():
         for step in range(max_new_tokens):
@@ -375,53 +488,85 @@ def query_llm_multiagent(
                     diag["tau_per_step"].append(1.0)
 
                 elif method == "NL_SWA":
-                    # ---- Nonlinear SWA: softmax(max_logit / tau) ----
+                    # ---- Nonlinear SWA: softmax(conf/tau) weighting ----
+                    work_logits = _center_logits(agent_logits) if cfg.logit_centering else agent_logits
                     conf    = agent_logits.max(dim=-1).values    # (N,)
                     w       = torch.softmax(conf / cfg.tau_base, dim=-1)  # (N,)
-                    z_b     = (w.unsqueeze(-1) * agent_logits).sum(dim=0)
+                    z_b     = (w.unsqueeze(-1) * work_logits).sum(dim=0)
                     jsd_t   = _jsd_from_logits(agent_logits)
                     diag["jsd_per_step"].append(jsd_t)
                     diag["tau_per_step"].append(cfg.tau_base)
 
-                else:  # NL_SWA_MPPI  -- FULL PIPELINE
-                    # 1) Entropy-based confidence (captures full distribution shape)
-                    #    Low entropy = high confidence
-                    H       = _entropy(agent_logits)              # (N,)
-                    conf    = -H                                  # negate: high conf = low entropy
+                else:  # NL_SWA_MPPI  -- FULL v2 PIPELINE
+                    # ===== STEP 0: Logit centering =====
+                    work_logits = _center_logits(agent_logits) if cfg.logit_centering else agent_logits
 
-                    # 2) Per-token JSD (measure inter-agent cultural disagreement)
-                    jsd_t   = _jsd_from_logits(agent_logits)
+                    # ===== STEP 1: Confidence scoring =====
+                    if cfg.conf_mode == "mi":
+                        conf = _mi_confidence(agent_logits)       # (N,)
+                    else:
+                        H    = _entropy(agent_logits)             # (N,)
+                        conf = -H
 
-                    # 3) Adaptive tau: increase temperature when agents disagree
-                    #    High JSD -> high tau -> more equal weighting (democratic)
-                    #    Low JSD  -> low tau  -> confident agent dominates
-                    tau_t   = cfg.tau_base * (1.0 + cfg.tau_adapt_alpha * jsd_t)
+                    # ===== STEP 2: Per-token JSD =====
+                    jsd_t = _jsd_from_logits(agent_logits)
 
-                    # 4) Nonlinear SWA with entropy confidence
-                    w       = torch.softmax(conf / tau_t, dim=-1)           # (N,)
-                    z_b     = (w.unsqueeze(-1) * agent_logits).sum(dim=0)   # (V,)
+                    # ===== STEP 3: Adaptive tau =====
+                    tau_t = cfg.tau_base * (1.0 + cfg.tau_adapt_alpha * jsd_t)
 
-                    # 5) MPPI: importance-weighted trajectory sampling
-                    #    Sample K perturbed aggregations, weight by cost
-                    #    (true MPPI uses exp(-cost/lambda) weighting)
+                    # ===== STEP 4: Nonlinear SWA with MI confidence =====
+                    w     = torch.softmax(conf / tau_t, dim=-1)           # (N,)
+                    z_b   = (w.unsqueeze(-1) * work_logits).sum(dim=0)    # (V,)
+
+                    # ===== STEP 5: Contrastive decoding =====
+                    # Amplify what the persona ensemble adds over a uniform average
+                    # This boosts the cultural signal that personas provide
+                    if cfg.contrastive_alpha > 0:
+                        z_uniform = work_logits.mean(dim=0)               # (V,) uniform avg
+                        z_contrast = z_b - z_uniform                      # cultural delta
+                        z_b = z_b + cfg.contrastive_alpha * z_contrast    # amplify
+                        diag["contrastive_applied"] += 1
+
+                    # ===== STEP 6: MPPI with improved cost & structured noise =====
                     if jsd_t > cfg.mppi_jsd_threshold:
+                        # Adaptive noise scale: more noise when more disagreement
+                        noise_scale = cfg.mppi_noise_scale
+                        if cfg.mppi_adaptive_noise:
+                            noise_scale *= math.sqrt(jsd_t / cfg.mppi_jsd_threshold)
+
+                        # Generate PCA-directed noise (explores disagreement subspace)
+                        pca_noises = _pca_noise(work_logits, noise_scale, cfg.mppi_K_samples)
+
                         z_candidates = [z_b]
-                        costs        = [jsd_t]  # cost of original
-                        for _ in range(cfg.mppi_K_samples):
-                            noise     = torch.randn_like(agent_logits) * cfg.mppi_noise_scale
-                            perturbed = agent_logits + noise
-                            H_p       = _entropy(perturbed)
-                            conf_p    = -H_p
-                            w_p       = torch.softmax(conf_p / tau_t, dim=-1)
-                            z_p       = (w_p.unsqueeze(-1) * perturbed).sum(dim=0)
-                            jsd_p     = _jsd_from_logits(perturbed)
+                        costs        = [_mppi_cost_static(z_b, work_logits, jsd_t)]
+
+                        for k in range(cfg.mppi_K_samples):
+                            perturbed = work_logits + pca_noises[k]       # (N, V)
+
+                            # Re-compute confidence on perturbed logits
+                            if cfg.conf_mode == "mi":
+                                conf_p = _mi_confidence(perturbed)
+                            else:
+                                conf_p = -_entropy(perturbed)
+
+                            w_p   = torch.softmax(conf_p / tau_t, dim=-1)
+                            z_p   = (w_p.unsqueeze(-1) * perturbed).sum(dim=0)
+
+                            # Apply contrastive to candidate too
+                            if cfg.contrastive_alpha > 0:
+                                z_p_uniform = perturbed.mean(dim=0)
+                                z_p = z_p + cfg.contrastive_alpha * (z_p - z_p_uniform)
+
+                            jsd_p = _jsd_from_logits(perturbed)
+                            cost_p = _mppi_cost_static(z_p, perturbed, jsd_p)
                             z_candidates.append(z_p)
-                            costs.append(jsd_p)
+                            costs.append(cost_p)
+
                         # Importance weighting: lower cost = higher weight
-                        costs_t  = torch.tensor(costs, device=agent_logits.device)
-                        imp_w    = torch.softmax(-costs_t / cfg.mppi_lambda, dim=-1)
-                        z_stack  = torch.stack(z_candidates)       # (K+1, V)
-                        z_b      = (imp_w.unsqueeze(-1) * z_stack).sum(dim=0)
+                        costs_t = torch.tensor(costs, device=agent_logits.device)
+                        imp_w   = torch.softmax(-costs_t / cfg.mppi_lambda, dim=-1)
+                        z_stack = torch.stack(z_candidates)       # (K+1, V)
+                        z_b     = (imp_w.unsqueeze(-1) * z_stack).sum(dim=0)
                         diag["mppi_triggered_steps"] += 1
 
                     diag["jsd_per_step"].append(jsd_t)
@@ -451,6 +596,30 @@ def query_llm_multiagent(
     return answers, diag
 
 
+def _mppi_cost_static(z_agg: torch.Tensor, agent_logits: torch.Tensor, jsd: float) -> float:
+    """
+    Composite MPPI cost function (v2).
+
+    Cost = w1 * JSD + w2 * H(z_agg) + w3 * skewness_penalty
+
+    Components:
+      - JSD: penalizes high inter-agent disagreement (want consensus)
+      - H(z_agg): penalizes indecisive aggregation (want sharp output)
+      - Skewness: penalizes when one agent dominates too much (want diversity)
+    """
+    # Entropy of aggregated distribution (want low = decisive)
+    H_agg = float(_entropy(z_agg.unsqueeze(0)).squeeze())
+
+    # Agent probability mass concentration (skewness penalty)
+    p_agents = torch.softmax(agent_logits, dim=-1)             # (N, V)
+    agent_maxprob = p_agents.max(dim=-1).values                # (N,)
+    skew = float(agent_maxprob.std())                          # high std = one agent dominates
+
+    # Weighted composite cost
+    cost = 0.4 * jsd + 0.4 * H_agg / 10.0 + 0.2 * skew
+    return cost
+
+
 def parse_model_choice(raw_answer: str) -> str:
     txt = str(raw_answer).strip().lower()
     if txt.startswith("1"): return "first"
@@ -463,7 +632,7 @@ def parse_model_choice(raw_answer: str) -> str:
     if "neither" in txt or "cannot decide" in txt: return "neither"
     return "other"
 
-print("[ENGINE] Multi-method inference engine ready")
+print("[ENGINE] Multi-method inference engine v2 ready")
 
 
 # ============================================================================
@@ -487,7 +656,8 @@ def run_language_eval(
 
     records    = []
     all_diag   = {"jsd_per_step": [], "tau_per_step": [],
-                  "mppi_triggered_steps": 0, "total_steps": 0}
+                  "mppi_triggered_steps": 0, "total_steps": 0,
+                  "contrastive_applied": 0}
 
     for start in tqdm(range(0, len(df), BATCH_SIZE), desc=f"{lang}/{method}"):
         batch_df = df.iloc[start:min(start + BATCH_SIZE, len(df))]
@@ -506,6 +676,7 @@ def run_language_eval(
             all_diag["tau_per_step"].extend(diag.get("tau_per_step", []))
             all_diag["mppi_triggered_steps"] += diag.get("mppi_triggered_steps", 0)
             all_diag["total_steps"] += diag.get("total_steps", 0)
+            all_diag["contrastive_applied"] += diag.get("contrastive_applied", 0)
 
         for (idx, row), raw in zip(batch_df.iterrows(), raw_answers):
             records.append({
@@ -927,8 +1098,6 @@ print("[VIZ] Publication-quality visualization functions ready")
 # ============================================================================
 # CELL 8: PHASE 2 (DISABLED)
 # ============================================================================
-# Phase 2 open-ended evaluation is disabled (ENABLE_PHASE2 = False).
-# Set ENABLE_PHASE2 = True at top of file to re-enable.
 print(f"[PHASE2] {'Enabled' if ENABLE_PHASE2 else 'Disabled (focus on Phase 1)'}")
 
 
@@ -949,7 +1118,8 @@ def main():
     # 3. Run ALL methods x ALL languages
     all_results     = []
     all_diagnostics = defaultdict(lambda: {"jsd_per_step": [], "tau_per_step": [],
-                                           "mppi_triggered_steps": 0, "total_steps": 0})
+                                           "mppi_triggered_steps": 0, "total_steps": 0,
+                                           "contrastive_applied": 0})
     method_times    = {}
 
     for method in METHODS_TO_EVAL:
@@ -970,6 +1140,7 @@ def main():
                 d["tau_per_step"].extend(diag.get("tau_per_step", []))
                 d["mppi_triggered_steps"] += diag.get("mppi_triggered_steps", 0)
                 d["total_steps"]          += diag.get("total_steps", 0)
+                d["contrastive_applied"]  += diag.get("contrastive_applied", 0)
 
                 # Print sample outputs for first 2 langs of each method
                 if lang in LANGS_TO_EVAL[:2]:
@@ -1050,6 +1221,8 @@ def main():
         rate = 100 * mppi_d["mppi_triggered_steps"] / mppi_d["total_steps"]
         print(f"\nMPPI: triggered on {mppi_d['mppi_triggered_steps']}/{mppi_d['total_steps']} "
               f"steps ({rate:.1f}%) -> {100-rate:.1f}% compute savings")
+        if mppi_d.get("contrastive_applied", 0) > 0:
+            print(f"Contrastive decoding applied {mppi_d['contrastive_applied']} times")
 
     if method_times:
         print("\nPer-method wall time:")
